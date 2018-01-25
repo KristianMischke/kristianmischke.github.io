@@ -1,0 +1,303 @@
+body {
+    margin:0;
+    padding: 0;
+    background: white;
+}
+
+
+/* NAVIGATION BAR */
+nav {
+    background: white;
+    background-size: 100vmax;
+
+    position: fixed;
+    top:0;
+    width: 100%;
+
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 18px;
+
+    z-index: 1;
+}
+
+.burger-nav {
+    display: block;
+    float: right;
+    height: 2.5rem;
+    width: 100%;
+    padding: 2rem;
+    position: fixed;
+
+    box-sizing: border-box;
+
+    background: url("/media/images/th-menu.svg") no-repeat 98% center;
+    background-size: 2.5rem;
+    filter: invert(100%);
+
+    cursor: pointer;
+}
+
+nav ul.nav-bar {
+    background-color: rgba(0, 0, 0, 0.6);
+
+    width: 100%;
+    height: 0;
+
+    padding: 0;
+    margin: 0;
+
+    list-style-type: none;
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+nav ul.nav-bar.open {
+    height: auto;
+}
+
+li.nav-item {
+    float: none;
+    width: 100%;
+}
+
+li.nav-item > a {
+
+    display: block;
+    padding: 20px 24px;
+
+    text-align: center;
+    text-decoration: none;
+
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+
+}
+
+li.nav-item > a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+}
+
+li.nav-item > a {
+    color: hsl(2, 36%, 77%);
+}
+
+li.nav-item.active > a {
+    color: white;
+}
+
+.brand {
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    color: white;
+}
+
+.brand a {
+    display: block;
+    color: white;
+    padding: 16px 24px;
+    text-decoration: none;
+}
+
+.brand > h1 {
+    margin: 0;
+    padding: 0;
+    
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+    font-size: 24px;
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+/* large screens */
+@media(min-width:1200px) {
+
+    .burger-nav {
+        display: none;
+    }
+
+    nav ul.nav-bar {
+        display: block;
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0 20% 0 0;
+    }
+
+    li.nav-item {
+        width: auto;
+        float: left;
+    }
+
+    li.nav-item:last-child {
+        width: auto;
+        /*    IMPORTANT NOTE: ADD THIS BACK IN WHEN LOGIN IS A FEATURE!!!   */
+        /* float: right;  */
+    }
+
+    .brand {
+        width: auto;
+        height: 61px;
+        padding: 0 0 0 20%;
+        float: left;
+    }
+
+}
+
+
+
+
+/* MAIN CONTENT */
+
+main {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 20px;
+}
+
+.content {
+    width: auto;
+    height: auto;
+    background-color: white;
+    margin: 0;
+    padding: 1rem 2rem;
+}
+
+.content .video {
+    /* you can control the width here */
+}
+
+.content .video > div {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.content .video iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+code {
+    padding-left: 4px;
+    padding-right :4px;
+
+    color: crimson;
+    background-color: #f1f1f1;
+
+    font-family: Consolas,"courier new";
+    font-size: 110%
+}
+
+.notice {
+    width: auto;
+    margin: 0;
+    padding: 1rem 0.5rem;
+
+    border-left: 8px solid red;
+    background-color: rgb(250, 141, 152);
+    color: white;
+
+    text-align: center;
+}
+
+a {
+    color: #00ccff;
+    text-decoration: none;
+}
+
+
+
+
+/* small screens */
+@media(min-width: 800px) {
+    
+    main {
+        padding: 3% 10%;
+    }
+
+}
+
+/* large screens */
+@media(min-width:1400px) { 
+
+    main {
+        padding: 3% 20%;
+    }
+
+}
+
+
+
+
+/* FOOTER */
+
+footer div {
+    display: block;
+
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 1rem 2rem;
+
+    box-sizing: border-box;
+
+
+    background-color: #483E6C;
+    color: white;
+
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    text-align: center;
+
+    z-index: 1;
+}
+
+footer a {
+    color: #00ccff;
+    text-decoration: none;
+}
+footer a img {
+    width: 32px;
+    height: 32px;
+}
+
+.social {
+    padding: 2rem 20%;
+    background-color: #7D75AA;
+}
+
+.social ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.social li {
+    width: 100%;
+
+}
