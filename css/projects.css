@@ -1,0 +1,33 @@
+.content {
+    padding: 0;
+}
+
+.project {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+}
+
+.project h2,
+.project p {
+    color: inherit;
+    filter: brightness(0.4);
+}
+
+.project a.projectButton {
+    color: white;
+}
+
+.project a.projectButton::before {
+    background-color: inherit;
+    filter: brightness(0.4);
+}
+
+@media(min-width: 500px) {
+
+    .project {
+      
+    }
+
+}

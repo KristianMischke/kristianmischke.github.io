@@ -1,5 +1,6 @@
 ---
 layout: default
+home: "true"
 ---
 <div class="content">
 
@@ -8,8 +9,7 @@ layout: default
     
     {% assign sorted = site.projects | sort: 'date' | reverse %}
     {% for item in sorted %}
-        <div class="project" style='background-color: {{ item.base-color }}'>
-            <img src="\media\images\project images\{{ item.image }}" alt="">
+        <div class="project" style='color: {{ item.base-color }}; background-color: {{ item.base-color }}; background-image: url("/media/images/project images/{{ item.image }}");'>
             <h2>{{ item.title }}</h2>
             <p>{{ item.subtitle }}</p>
             <p>{{ item.description }}</p>
@@ -20,3 +20,5 @@ layout: default
     {% endfor %}
 
 </div>
+
+<link rel="stylesheet" type="text/css" href="css/projects.css">

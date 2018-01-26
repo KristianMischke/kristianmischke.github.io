@@ -14,5 +14,5 @@ buttons:
 
 image: justicon.PNG
 
-base-color:
+base-color: "#5CD9FF"
 ---
