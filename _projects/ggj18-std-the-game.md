@@ -16,5 +16,5 @@ buttons:
 
 image: "STD Screenshot.PNG"
 
-base-color: "#483E6C"
+base-color: "#696554"
 ---

@@ -14,5 +14,5 @@ buttons:
 
 image: "DNDC-BG.png"
 
-base-color: "#483E6C"
+base-color: "#685E9C"
 ---

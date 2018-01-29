@@ -14,5 +14,5 @@ buttons:
 
 image: "FPS Shooter.PNG"
 
-base-color: "#F5F3C3"
+base-color: "#6E5338"
 ---

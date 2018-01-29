@@ -16,5 +16,5 @@ buttons:
 
 image: "Second Layer.PNG"
 
-base-color: "#2A2E3D"
+base-color: "#6A6E7D"
 ---

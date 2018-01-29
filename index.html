@@ -9,13 +9,14 @@ home: "true"
     
     {% assign sorted = site.projects | sort: 'date' | reverse %}
     {% for item in sorted %}
-        <div class="project" style='color: {{ item.base-color }}; background-color: {{ item.base-color }}; background-image: url("/media/images/project images/{{ item.image }}");'>
+        <div class="project" style='color: {{ item.base-color }}; background-color: {{ item.base-color }};'>
             <h2>{{ item.title }}</h2>
             <p>{{ item.subtitle }}</p>
             <p>{{ item.description }}</p>
             {% for button in item.buttons %}
                 <a class="projectButton" href="{{ button.url }}">{{ button.message }}</a>
             {% endfor %}
+            <img src="/media/images/project images/{{ item.image }}" alt="">
         </div>
     {% endfor %}
 
