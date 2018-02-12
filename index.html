@@ -13,10 +13,14 @@ home: "true"
             <h2>{{ item.title }}</h2>
             <p>{{ item.subtitle }}</p>
             <p>{{ item.description }}</p>
-            {% for button in item.buttons %}
+            <div class="button-container">
+                {% for button in item.buttons %}
                 <a class="projectButton" href="{{ button.url }}">{{ button.message }}</a>
-            {% endfor %}
-            <img src="/media/images/project images/{{ item.image }}" alt="">
+                {% endfor %}
+            </div>
+            <div class="img-container" style='background-image: url("/media/images/project images/{{ item.image }}")'>
+                <!-- <img src="/media/images/project images/{{ item.image }}" alt=""> -->
+            </div>
         </div>
     {% endfor %}
 
