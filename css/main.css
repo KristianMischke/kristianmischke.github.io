@@ -8,7 +8,7 @@ body {
 
 main {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(30, 30, 30, 0.8);
     margin: 0;
     padding: 0;
 
@@ -25,9 +25,25 @@ main.home {
 .content {
     width: auto;
     height: auto;
-    background-color: white;
+
     margin: 0;
     padding: 1rem 2rem;
+}
+
+.content .bg-image {
+    position: fixed;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: white url("/media/images/glow-bg.JPG") no-repeat;
+    background-size: 100vmax 100vmax;
+
+    filter: blur(50px);
+
+    z-index: -1;
 }
 
 .content .video {

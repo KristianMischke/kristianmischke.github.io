@@ -3,13 +3,14 @@ layout: default
 home: "true"
 ---
 <div class="content">
+    <div class="bg-image"></div>
 
     <h1>Hello there!</h1>
     <h2>I am Kristian Mischke</h2>
     
     {% assign sorted = site.projects | sort: 'date' | reverse %}
     {% for item in sorted %}
-        <div class="project" style='color: {{ item.base-color }}; background-color: {{ item.base-color }};'>
+        <div class="project display-wide">
             <h2>{{ item.title }}</h2>
             <p>{{ item.subtitle }}</p>
             <p>{{ item.description }}</p>
@@ -18,9 +19,7 @@ home: "true"
                 <a class="projectButton" href="{{ button.url }}">{{ button.message }}</a>
                 {% endfor %}
             </div>
-            <div class="img-container" style='background-image: url("/media/images/project images/{{ item.image }}")'>
-                <!-- <img src="/media/images/project images/{{ item.image }}" alt=""> -->
-            </div>
+            <div class="img-container" style='background-image: url("/media/images/project images/{{ item.image }}")'></div>
         </div>
     {% endfor %}
 

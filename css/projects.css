@@ -1,20 +1,19 @@
 .content {
     padding: 0;
+    color: white;
 }
 
 .project {
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
 
+    box-sizing: border-box;
+
     padding: 0;
-    
 }
 
 .project h2,
 .project p {
-    color: inherit;
-    filter: brightness(0.3);
+    color: white;
 }
 
 .project .button-container {
@@ -23,7 +22,7 @@
 }
 
 .project a.projectButton {
-    background-color: inherit;
+    background-color: transparent;
 
     margin: 1rem;
     padding: 8px;
