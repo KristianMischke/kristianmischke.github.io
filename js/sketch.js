@@ -13,12 +13,12 @@ let grid = [];
 function setup() {
   
   createCanvas(windowWidth, windowHeight);
-  textFont('monospace');
+  textFont('Courier New');
 
   createGrid();
 
   chooseBigWord('Welcome!', 4, 5);
-  chooseWord('How are you doing?\n\ttest',20, 4);
+  chooseWord('How are you doing?\n\ttest',20, 8);
 
 }
 
@@ -28,7 +28,7 @@ function windowResized() {
   createGrid();
 
   chooseBigWord('Welcome!', 4, 5);
-  chooseWord('How are you doing?\n\ttest',20, 4);
+  chooseWord('How are you doing?\n\ttest',20, 8);
 }
 
 function draw() {
@@ -62,9 +62,9 @@ function draw() {
     gridColors.push(row);
   }
 
-  background(0);
 
 
+  background(0, 20, 0);
 
   textSize(CHAR_WIDTH);
   textAlign(LEFT);
@@ -118,11 +118,12 @@ function mouseDragged() {
 
 }
 
+// meant for a single line
 function chooseBigWord(word, row, col) {
 
   let textScale = 16;
 
-  let textHeight = textScale;
+  let textHeight = textScale * 1.5;
   let textWidth = word.length * textScale;
 
   background(0);
@@ -137,7 +138,7 @@ function chooseBigWord(word, row, col) {
 
       let canvasI = (x + y * width) * 4;
 
-      if(pixels[canvasI] > 240) {
+      if(pixels[canvasI] > 180) {
         if(grid[row + y][col + x] != null) {
           grid[row + y][col + x].chosenChar = getRandomChar();
         }
@@ -149,7 +150,7 @@ function chooseBigWord(word, row, col) {
 }
 
 
-
+// can be multiple lines of text
 function chooseWord(text, row, col) {
 
   let rowI = 0;
