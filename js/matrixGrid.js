@@ -122,9 +122,9 @@ class MatrixGrid {
         }
     }
 
-    addRain(row, col) {
+    addRain(row, col, bright = 1) {
         this.grid[row][col].rain = true;
-        this.grid[row][col].brightness = 1;
+        this.grid[row][col].brightness = bright;
         this.grid[row][col].char = this.grid[row][col].chosenChar === ''? getRandomChar() : this.grid[row][col].chosenChar;  
     }
 

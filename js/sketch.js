@@ -2,6 +2,17 @@
 let CHAR_WIDTH = 16;
 const MATRIX_RATE = 80;
 
+
+const MODES = {
+  MATRIX: 0,
+  SPACE: 1,
+  OCEAN: 2,
+  BUTTERFLY: 3,
+  GOL: 4
+};
+
+let SIM_MODE = MODES.SPACE;
+
 //keep track of time
 let deltaTime = 0;
 let lastMillis = 0;
@@ -49,8 +60,29 @@ function draw() {
   lastMillis = millis();
   
 
-  //background(127, 0, 255);
-  background(0, 255, 0);
+  switch(SIM_MODE) {
+    case MODES.MATRIX:
+      background(0, 255, 0);
+      break;
+    case MODES.SPACE:
+      background(127, 0, 255);
+      break;
+    case MODES.OCEAN:
+      background(0, 127, 255);
+      break;
+    case MODES.BUTTERFLY:
+      background(255);
+
+      for(let i = 0; i < random(20, 50); i++) {
+        fill(color(random(127, 255), random(127, 255), random(127, 255)));
+        rect(random(0, width), random(0, height), random(0, width/4), random(0, height/4));
+      }
+      break;
+
+    case MODES.GOL:
+      background(0, 255, 127);
+      break;
+  }
 
   /*fill(255, 255, 255);
   textSize(132);
@@ -79,6 +111,25 @@ function draw() {
   //background(10, 0, 20);
   background(0, 20, 0);
 
+  switch(SIM_MODE) {
+    case MODES.MATRIX:
+      background(0, 20, 0);
+      break;
+    case MODES.SPACE:
+      background(10, 0, 20);
+      break;
+    case MODES.OCEAN:
+      background(0, 10, 20);
+      break;
+    case MODES.BUTTERFLY:
+      background(200, 127, 127);
+      break;
+    case MODES.GOL:
+      background(0, 20, 10);
+      break;
+  }
+
+
   bgGrid.drawGrid(gridColors);
   grid.drawGrid(gridColors);
 
@@ -87,8 +138,8 @@ function draw() {
   updateCounter += deltaTime;
   if(updateCounter >= MATRIX_RATE) {
     updateCounter -= MATRIX_RATE;
-    updateRain(grid, 0.9995, 0.05, 0.9);
-    updateRain(bgGrid, 0.999, 0.05);
+    updateRain(grid, 0.9995, 0.05, 0.875);
+    updateRain(bgGrid, 0.999, 0.05, 0.9);
   }
 
 }
@@ -117,11 +168,34 @@ function updateRain(matrixGrid, rainCapPercent = 0.98, decay = 0.05, chosenRainP
   for(let i = matrixGrid.grid.length - 1; i >= 0; i--) {
     for(let j = matrixGrid.grid[i].length - 1; j >= 0; j--) {
       
-      // randomly add rain on the top row
-      if(i === 0) {
-        if(Math.random() > rainCapPercent) {
-          matrixGrid.addRain(i, j);
-        }
+      switch(SIM_MODE) {
+
+        case MODES.MATRIX:
+          // randomly add rain on the top row
+          if(i === 0) {
+            if(Math.random() > rainCapPercent) {
+              matrixGrid.addRain(i, j);
+            }
+          }
+          break;
+
+        case MODES.OCEAN:
+          break;
+
+        case MODES.SPACE:
+          if(Math.random() > rainCapPercent) {
+            matrixGrid.addRain(i, j);
+            //matrixGrid.grid[i][j].brightness = 1;
+          }
+          break;
+
+        case MODES.BUTTERFLY:
+          if(i === 0 || i === matrixGrid.grid.length - 1 || j === 0 || j === matrixGrid.grid[i].length - 1) {
+            if(Math.random() > rainCapPercent) {
+              matrixGrid.addRain(i, j);
+            }
+          }
+          break;
       }
 
       // decay the brightness, if it is not a chosen character
@@ -129,22 +203,48 @@ function updateRain(matrixGrid, rainCapPercent = 0.98, decay = 0.05, chosenRainP
         matrixGrid.grid[i][j].brightness -= decay;
       } else {
         if(matrixGrid.grid[i][j].char != matrixGrid.grid[i][j].chosenChar && Math.random() > chosenRainPercent) {
-          matrixGrid.grid[0][j].rain = true;
+         
+          if(SIM_MODE === MODES.MATRIX) {
+            matrixGrid.addRain(0, j);
+          }
+
+          if(SIM_MODE === MODES.SPACE) {
+            matrixGrid.addRain(i, j);
+          }
+
         }
       }
 
       if(matrixGrid.grid[i][j].rain === true) {
-        // if this is the leading rain
+        // if this is rain
 
-        if(i < matrixGrid.grid.length - 1) {
-          // and it is not the last row,
-          // continue the rain on the next row
-          matrixGrid.addRain(i + 1, j);
+        switch(SIM_MODE) {
 
+        case MODES.MATRIX:
+          if(i < matrixGrid.grid.length - 1) {
+            // and it is not the last row, continue the rain on the next row
+            matrixGrid.addRain(i + 1, j);
+          }
+          matrixGrid.grid[i][j].rain = false; // remove the rain at this location
+          break;
+
+        case MODES.OCEAN:
+          break;
+
+        case MODES.SPACE:
+          matrixGrid.grid[i][j].rain = false;
+          break;
+
+        case MODES.BUTTERFLY:
+          matrixGrid.grid[i][j].rain = false;
+
+          let posI = i + round(random(-1, 1));
+          let posJ = j + round(random(-1, 1));
+          if(posI >= 0 && posI <= matrixGrid.grid.length - 1 && posJ >= 0 && posJ <= matrixGrid.grid[posI].length - 1) {
+            matrixGrid.addRain(posI, posJ);
+          }
+          break;
         }
-
-        // remove the rain at this location
-        matrixGrid.grid[i][j].rain = false;
 
       } else if(Math.random() > 0.95 && matrixGrid.grid[i][j].brightness > 0.5 && matrixGrid.grid[i][j].chosenChar === '') {
         // otherwise if it is not the leading rain,
