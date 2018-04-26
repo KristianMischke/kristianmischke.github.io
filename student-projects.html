@@ -30,7 +30,9 @@ home: "false"
         <ul class="project display-wide">
             <li>
                 {% if item.project-id != "" %}
-                <a href="#{{item.project-id}}">{{ item.author }}</a>
+                <a href="#{{item.project-id}}" class="tooltip">{{ item.author }}
+                    <span class="tooltiptext">Click to see their final project!</span>
+                </a>
                 {% else %}
                 {{item.author}}
                 {% endif %}
