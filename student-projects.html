@@ -50,11 +50,15 @@ home: "false"
     <br/><br/><br/>
     
     {% for item in sorted %}
-        {% if item.project-id != "" %}
+        {% if item.title != "" %}
         <div>
             <a name="{{item.project-id}}">
                 <h2 class="tooltip">
                     <a href="{{item.author-url}}" target="_blank">{{ item.author }}</a>
+                    {% if item.author2 %}
+                    & 
+                    <a href="{{item.author2-url}}" target="_blank">{{ item.author2 }}</a>
+                    {% endif %}
                     <span class="tooltiptext">Click to go to their scratch account</span>
                 </h2>
             </a>
