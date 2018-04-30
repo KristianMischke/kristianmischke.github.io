@@ -1,0 +1,7 @@
+tabs:
+
+- title: Home
+  url: index.html
+
+- title: Class Showcase
+  url: student-projects.html

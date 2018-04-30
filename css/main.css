@@ -1,7 +1,7 @@
 body {
     margin:0;
     padding: 0;
-    background: white;
+    background: #ebebeb;
 }
 
 /* MAIN CONTENT */
@@ -12,7 +12,7 @@ canvas {
 
 main {
     width: 100%;
-    background-color: rgba(30, 30, 30, 0.8);
+    /* background-color:#ebebeb; */
     margin: 0;
     padding: 0;
 
@@ -42,8 +42,8 @@ main.home {
     left: 0;
     right: 0;
 
-    background: white url("/media/images/glow-bg.JPG") no-repeat;
-    background-size: 100vmax 100vmax;
+    /* background: white url("/media/images/glow-bg.JPG") no-repeat; */
+    /* background-size: 100vmax 100vmax; */
 
     filter: blur(50px);
 
@@ -122,6 +122,10 @@ a {
 
     main.home {
         padding: 0;
+    }
+
+    main.home .content {
+        padding: 3% 20%;
     }
 
 }

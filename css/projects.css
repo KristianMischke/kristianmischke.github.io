@@ -1,6 +1,6 @@
 .content {
     padding: 0;
-    color: white;
+    color: black;
 }
 
 .project {
@@ -11,9 +11,11 @@
     padding: 0;
 }
 
-.project h2,
+.project h2 {
+    color: #444;
+}
 .project p {
-    color: white;
+    color: black;
 }
 
 .project .button-container {
@@ -29,7 +31,7 @@
     border: solid 1px;
     border-radius: 1rem;
 
-    color: white;
+    color: black;
 
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
@@ -39,6 +41,7 @@
 .project a.projectButton:hover {
     border-width: 5px;
     padding: 4px;
+    box-sizing: border-box;
 }
 
 .project .img-container {
