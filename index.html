@@ -14,7 +14,17 @@ home: "true"
                 <h4>{{ skill.title }}</h4>
                 <ul class="elements">
                     {% for element in skill.elements%}
-                    <li>{{ element }}</li>
+                    <li class="tooltip">{{ element.name }} <!-- Change from tooltip to a dropdown that occurs on-click  -->
+                        {% if element.related-projects %}
+                        <span class="tooltiptext">
+                            <ul>
+                            {% for related-project in element.related-projects %}
+                                <li>{{ related-project }}</li>
+                            {% endfor %}
+                            </ul>
+                        </span>
+                        {% endif %}
+                    </li>
                     {% endfor %}
                 </ul>
             </li>

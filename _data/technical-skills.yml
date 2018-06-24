@@ -1,19 +1,44 @@
 - title: Programming
   elements:
-    - C#
-    - Processing
-    - Java
-    - Python
-    - C++
+    - name: C#
+      related-projects:
+        - Mohawk Games
+        - Mineocrafte
+
+    - name: Processing
+      related-projects:
+        - Programming Class - Crossroads Co-Op
+        - Second Layer Remake
+
+    - name: Java
+
+    - name: Python
+
+    - name: C++
 
 - title: Web Development
   elements:
-    - HTML, CSS, JS
-    - Jekyll
-    - Django
+    - name: HTML, CSS, JS
+    
+    - name: Jekyll
+      related-projects:
+        - Keeping Blessing Hill
+        - This website
+
+    - name: Django
+      related-projects:
+        - New Drag'n'Drop Coding website
 
 - title: Software
   elements:
-    - Unity3D
-    - Visual Studio
-    - Perforce
+    - name: Unity3D
+      related-projects:
+        - Mohawk Games
+
+    - name: Visual Studio
+      related-projects:
+        - Mohawk Games
+
+    - name: Perforce
+      related-projects:
+        - Mohawk Games
