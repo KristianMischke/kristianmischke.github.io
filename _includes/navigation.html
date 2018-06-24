@@ -1,0 +1,12 @@
+<div class="brand">
+    <h1><a href="index.html">{{site.title}}</a></h1>
+</div>
+<a class="burger-nav"></a>
+<ul class="nav-bar">
+    {% for tab in site.data.navigation.tabs %}
+    {% assign tabUrl = '/' | append: tab.url %}
+    <li class="nav-item {% if page.url == tabUrl %}active{% else %}{% if page.url == '/' and tabUrl == '/index.html' %}active{% endif %}{% endif %}">
+        <a href="{{tab.url}}">{{tab.title}}</a>
+    </li>
+    {% endfor %}
+</ul>

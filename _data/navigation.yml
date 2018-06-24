@@ -3,5 +3,8 @@ tabs:
 - title: Home
   url: index.html
 
+- title: Projects
+  url: projects.html
+
 - title: Class Showcase
   url: student-projects.html

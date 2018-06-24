@@ -10,27 +10,14 @@
 
     <!-- <script src="libraries/p5.js"></script>
     <script src="libraries/p5.dom.js"></script>
-    <script src="libraries/p5.sound.js"></script>
-    <script src="js/sketch.js"></script>
-    <script src="js/matrixGrid.js"></script> -->
+    <script src="libraries/p5.sound.js"></script> -->
 
     <title>{{site.title}}</title>
 </head>
 <body>
 
     <nav>
-        <div class="brand">
-            <h1><a href="index.html">{{site.title}}</a></h1>
-        </div>
-        <a class="burger-nav"></a>
-        <ul class="nav-bar">
-            {% for tab in site.data.navigation.tabs %}
-            {% assign tabUrl = '/' | append: tab.url %}
-            <li class="nav-item {% if page.url == tabUrl %}active{% else %}{% if page.url == '/' and tabUrl == '/index.html' %}active{% endif %}{% endif %}">
-                <a href="{{tab.url}}">{{tab.title}}</a>
-            </li>
-            {% endfor %}
-        </ul>
+        {% include navigation.html %}
     </nav>
     
     <header>
@@ -46,31 +33,7 @@
     </main>
 
     <footer>
-        <div class="social">
-            <ul>
-                <li>
-                    <a href="https://www.youtube.com/channel/UC44hbuzQZteAb82_8QzfBvw" target="_blank">
-                        <img src="/media/images/youtube.svg" alt="YouTube">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/kristian-mischke/" target="_blank">
-                        <img src="/media/images/linkedin.svg" alt="LinkedIn">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/KK_Coder" target="_blank">
-                        <img src="/media/images/twitter.svg" alt="Twitter">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="legal">
-            {% if page.scratch %}
-            <p>Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab</p>
-            {% endif %}
-            <p>Proudly hosted by GitHub <a href="https://github.com/" target="_blank"><img src="/media/images/github.svg" align="center"></a></p>
-        </div>
+        {% include footer.html %}
     </footer>
 
 

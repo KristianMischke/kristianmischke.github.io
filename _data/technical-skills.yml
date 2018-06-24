@@ -1,0 +1,19 @@
+- title: Programming
+  elements:
+    - C#
+    - Processing
+    - Java
+    - Python
+    - C++
+
+- title: Web Development
+  elements:
+    - HTML, CSS, JS
+    - Jekyll
+    - Django
+
+- title: Software
+  elements:
+    - Unity3D
+    - Visual Studio
+    - Perforce

@@ -2,26 +2,88 @@
 layout: default
 home: "true"
 ---
-<div class="content">
-    <div class="bg-image"></div>
+<div class="content resume">
 
-    <h1>Hello there!</h1>
-    <h2>I am Kristian Mischke</h2>
-    
-    {% assign sorted = site.projects | sort: 'date' | reverse %}
-    {% for item in sorted %}
-        <div class="project display-wide">
-            <h2>{{ item.title }}</h2>
-            <p>{{ item.subtitle }}</p>
-            <p>{{ item.description }}</p>
-            <div class="button-container">
-                {% for button in item.buttons %}
-                <a class="projectButton" href="{{ button.url }}">{{ button.message }}</a>
-                {% endfor %}
+    <a href="/media/documents/TechnicalResume.pdf">Boring resume</a>
+
+    <section>
+        <h3>TECHNICAL SKILLS</h3>
+        <ul class="skills">
+            {% for skill in site.data.technical-skills %}
+            <li class="skill">
+                <h4>{{ skill.title }}</h4>
+                <ul class="elements">
+                    {% for element in skill.elements%}
+                    <li>{{ element }}</li>
+                    {% endfor %}
+                </ul>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section>
+        <h3>LANGUAGES</h3>
+        <ul class="language-list">
+            {% for language in site.data.languages %}
+            <li class="language">{{ language }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section>
+        <h3>EDUCATION</h3>
+        <ul class="education-list">
+        {% for education in site.data.education %}
+        <li class="education">
+            <div class="left">
+                <h4>{{ education.school }}</h4>
+                <p>{{ education.degree }}</p>
             </div>
-            <div class="img-container" style='background-image: url("/media/images/project images/{{ item.image }}")'></div>
-        </div>
-    {% endfor %}
+            <div class="right">
+                <p>{{ education.place }}</p>
+                <p>{{ education.end-time }}</p>
+            </div>
+        </li>
+        {% endfor %}
+        </ul>        
+    </section>
+
+    <section>
+        <h3>WORK EXPERIENCE</h3>
+        <ul class="job-list">
+            {% for project in site.data.jobs %}
+            <li>
+                {% assign type = "job" %}
+                {% include resume-project-template.html %}
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section>
+        <h3>PROJECTS</h3>
+        <ul class="project-list">
+            {% for project in site.data.projects %}
+            <li>
+                {% assign type = "project" %}
+                {% include resume-project-template.html %}
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section>
+        <h3>EXTRA-CURRICULAR ACTIVITIES</h3>
+        <ul class="extra-activites-list">
+                {% for project in site.data.extra-curricular-activities %}
+                <li>
+                    {% assign type = "activity" %}
+                    {% include resume-project-template.html %}
+                </li>
+                {% endfor %}
+            </ul>
+    </section>
 
 </div>
 

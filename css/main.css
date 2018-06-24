@@ -34,7 +34,7 @@ main.home {
     padding: 1rem 2rem;
 }
 
-.content .bg-image {
+/* .content .bg-image {
     position: fixed;
 
     top: 0;
@@ -42,13 +42,13 @@ main.home {
     left: 0;
     right: 0;
 
-    /* background: white url("/media/images/glow-bg.JPG") no-repeat; */
-    /* background-size: 100vmax 100vmax; */
+    background: white url("/media/images/glow-bg.JPG") no-repeat;
+    background-size: 100vmax 100vmax;
 
     filter: blur(50px);
 
     z-index: -1;
-}
+} */
 
 .content .video {
     /* you can control the width here */
@@ -99,6 +99,55 @@ a {
 
 
 
+
+/* RESUME STYLES */
+
+
+
+/* TECHNICAL SKILLS */
+section h3 {
+    color: #00ccff;
+}
+
+li.skill {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+li.skill .elements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+li.skill .elements li {
+    margin: 1rem;
+    padding: 0.5rem 0.5rem;
+    list-style-type: none;
+
+    color: #333333;
+
+    background-color: #dddddd;
+
+    border: 1px solid #bbbbbb;
+    border-radius: 2rem;
+}
+
+li.skill .elements li:hover {
+    background-color: #bababa;
+    cursor: pointer;
+}
+
+
+/* WORK EXPERIENCE */
+.job, .project, .activity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+}
 
 /* small screens */
 @media(min-width: 800px) {

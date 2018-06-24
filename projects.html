@@ -1,0 +1,27 @@
+---
+layout: default
+home: "false"
+---
+<div class="content">
+
+    <h1>Hello there!</h1>
+    <h2>I am Kristian Mischke</h2>
+    
+    {% assign sorted = site.projects | sort: 'date' | reverse %}
+    {% for item in sorted %}
+        <div class="old-project display-wide">
+            <h2>{{ item.title }}</h2>
+            <p>{{ item.subtitle }}</p>
+            <p>{{ item.description }}</p>
+            <div class="button-container">
+                {% for button in item.buttons %}
+                <a class="projectButton" href="{{ button.url }}">{{ button.message }}</a>
+                {% endfor %}
+            </div>
+            <div class="img-container" style='background-image: url("/media/images/project images/{{ item.image }}")'></div>
+        </div>
+    {% endfor %}
+
+</div>
+
+<link rel="stylesheet" type="text/css" href="css/projects.css">

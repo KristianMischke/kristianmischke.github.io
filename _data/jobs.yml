@@ -1,0 +1,29 @@
+- company: Mohawk Games LLC
+  position: Quality Assurance Tester / Software Engineer Intern
+  place: Timonium, MD
+  start-time: June 2017
+  end-time: Present
+  responsibilities:
+    - description: Constructed Loose Quad Tree implementation for object culling
+    - description: Discovered and reported bugs to the developers
+    - description: Repaired bugs in Unity 3D and C# within skill set
+    - description: Worked on Limited Supply DLC additional in-game UI for Offworld Trading Company
+
+- company: The Suburban Country Club
+  position: Waiter
+  place: Pikesville, MD
+  start-time: July 2016
+  end-time: June 2017
+  responsibilities:
+    - description: Waited tables in an orderly fashion
+    - description: Provided a formal service to the club members
+    - description: Assisted managers with POS Jonas Club Management system when configuring a new menu
+
+- company: Grace Fellowship Church, Kids in the Word (KITW)
+  position: Childcare Teacher/Helper
+  place: Timonium, MD
+  start-time: Feb 2015
+  end-time: May 2016
+  responsibilities:
+    - description: Took care of children ages 3 to 5
+    - description: Performed the given curricular content
