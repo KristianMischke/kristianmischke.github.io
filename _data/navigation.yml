@@ -1,10 +1,13 @@
 tabs:
 
 - title: Home
-  url: index.html
+  url: /index.html
 
 - title: Projects
-  url: projects.html
+  url: /projects.html
 
-- title: Class Showcase
-  url: student-projects.html
+- title: Class Showcase 2017-2018
+  url: /student-projects/2017-2018/
+
+- title: Class Showcase 2018-2019
+  url: /student-projects/2018-2019/

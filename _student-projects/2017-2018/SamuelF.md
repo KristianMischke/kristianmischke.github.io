@@ -1,6 +1,6 @@
 ---
 layout: none
-date:   2018-04-26 12:00:00 -0500
+school-year: 2017-2018
 categories: student-project
 title:  "DUUN [SE]"
 author: "Samuel F."
