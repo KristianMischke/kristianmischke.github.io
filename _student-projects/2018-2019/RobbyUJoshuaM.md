@@ -2,7 +2,7 @@
 layout: none
 school-year: 2018-2019
 categories: student-project
-title:  "zoom shoot Z 18"
+title:  "zoom shoot z"
 author: "Robby U."
 author2: "Joshua M."
 description:
