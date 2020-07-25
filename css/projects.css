@@ -1,6 +1,6 @@
 .content {
     padding: 0;
-    color: black;
+    color: var(--color-light);
 }
 
 .old-project {
@@ -12,10 +12,10 @@
 }
 
 .old-project h2 {
-    color: #444;
+    color: var(--color-contrast);
 }
 .old-project p {
-    color: black;
+    color: var(--color-light);
 }
 
 .old-project .button-container {
@@ -31,7 +31,7 @@
     border: solid 1px;
     border-radius: 1rem;
 
-    color: black;
+    color: var(--color-contrast);
 
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
