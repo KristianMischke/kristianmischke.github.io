@@ -1,8 +1,26 @@
+- title: "Schess: A Chess Battle-Royal Variant"
+  company: <a href="http://www.schessgame.com/">schessgame.com</a>
+  position: 
+  place:
+  start-time: June 2017
+  end-time: May 2018
+  responsibilities:
+    - description: Acted as the Lead Programmer during a 48-hour game jam with three other friends.
+    - description: Responsible for game-logic, and networking code using Remote Procedure Calls (RPCs) with Photon Unity Networking (PUN) in the Unity 3D game engine.
+
+- title: Keeping Blessing Hill Website
+  position: 
+  place:
+  start-time: 2018
+  end-time: 2019
+  responsibilities:
+    - description: Created <a href="http://www.keepingblessinghill.com/">keepingblessinghill.com</a> using Jekyll & GitHub pages for my grandmother’s blog to promote her book.
+
 - title: Drag'n'Drop Coding Tutorial Website
   position: 
-  place: Timonium, MD
+  place:
   start-time: June 2017
-  end-time: Present
+  end-time: May 2018
   responsibilities:
     - description: Created website to showcase educational programming videos (dragndropcoding.com)
  

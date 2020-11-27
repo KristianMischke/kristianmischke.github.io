@@ -1,7 +1,7 @@
 body {
     margin:0;
     padding: 0;
-    background: var(--color-alpha);
+    background: var(--color-bg1);
     color: var(--color-light);
 }
 
@@ -13,7 +13,7 @@ canvas {
 
 main {
     width: 100%;
-    background-color: var(--color-alpha);
+    background-color: var(--color-bg1);
     margin: 0;
     padding: 0;
 

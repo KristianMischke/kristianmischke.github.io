@@ -1,12 +1,15 @@
 :root {
-   --color-alpha: #33313b;
-   --color-beta: #3c4f65;
-   --color-gamma: #834c69;
-   --color-contrast: #d6d5ff;
+   --color-bg1: #121212;
+   --color-bg2: #242424;
+   --color-bg3: #363636;
+   --color-gamma: #82e7d6;
+   --color-contrast: #a8e7e5;
    --color-light: #e6f5ff;
-   --color-link: #9695ff;
+   --color-link: #fdcdb7;
 
-   --main-font: Consolas, "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+   --main-font: Verdana, Geneva, sans-serif
+   /*--main-font: Consolas, "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+   */
 }
 
 p {
@@ -16,7 +19,7 @@ p {
 body {
     margin:0;
     padding: 0;
-    background: var(--color-alpha);
+    background: var(--color-bg1);
 }
 
 /* MAIN CONTENT */
@@ -35,11 +38,7 @@ main {
     box-sizing: border-box;
 
     font-family: var(--main-font);
-    font-size: 20px;
-}
-
-main.home {
-    padding: 0;
+    font-size: 16px;
 }
 
 .content {
@@ -48,6 +47,12 @@ main.home {
 
     margin: 0;
     padding: 1rem 2rem;
+    background: var(--color-bg2);
+}
+
+.profile-pic {
+   border-radius: 50%;
+   width: 180px;
 }
 
 /* .content .bg-image {
@@ -109,7 +114,7 @@ code {
 }
 
 a {
-    color: var(--color-contrast);
+    color: var(--color-link);
     text-decoration: none;
 }
 
@@ -202,7 +207,7 @@ li.skill .elements li {
 
     color: var(--color-contrast);
 
-    background-color: var(--color-alpha);
+    background-color: var(--color-bg1);
 
     border: 2px solid var(--color-contrast);
     border-radius: 2rem;
@@ -210,19 +215,39 @@ li.skill .elements li {
 
 li.skill .elements li:hover {
     background-color: var(--color-contrast);
-    border-color: var(--color-beta);
-    color: var(--color-alpha);
+    border-color: var(--color-bg2);
+    color: var(--color-bg1);
     cursor: pointer;
 }
 
 
 /* WORK EXPERIENCE */
-.job, .project, .activity {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.job, .project, .activity, .education {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
 
-    width: 100%;
+   /*width: 100%;*/
+   background-color: var(--color-bg3);
+}
+
+.resume-list {
+   background-color: var(--color-bg3);
+   list-style-type: none;
+   padding: 0;
+}
+
+.resume-list > li {
+   padding-left: 16px;
+   padding-bottom: 16px;
+}
+
+.time-and-place {
+   width: 150px;
+}
+
+.responsibility {
+   margin-bottom: 4px;
 }
 
 /* small screens */
@@ -232,25 +257,25 @@ li.skill .elements li:hover {
         padding: 3% 10%;
     }
 
-    main.home {
-        padding: 0;
-    }
+   .job, .project, .activity, .education {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  
+      /*width: 100%;*/
+  }
 
 }
 
 /* large screens */
-@media(min-width:1400px) { 
+@media(min-width:1200px) { 
 
     main {
         padding: 3% 20%;
     }
 
-    main.home {
-        padding: 0;
-    }
-
     main.home .content {
-        padding: 3% 20%;
+        /*padding: 3% 20%;*/
     }
 
 }

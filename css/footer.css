@@ -12,7 +12,7 @@ footer div {
     box-sizing: border-box;
 
 
-    background-color: var(--color-alpha);
+    background-color: var(--color-bg1);
     color: var(--color-light);
 
     font-family: Consolas, "courier new", sans-serif;/*Futura, "Trebuchet MS", Arial, sans-serif;*/
@@ -28,11 +28,12 @@ footer a {
 footer a img {
     width: 32px;
     height: 32px;
+    fill: var(--color-contrast);
 }
 
 .social {
     padding: 2rem 20%;
-    background-color: var(--color-beta);
+    background-color: var(--color-bg2);
 }
 
 .social ul {
