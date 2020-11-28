@@ -6,6 +6,7 @@
    --color-contrast: #a8e7e5;
    --color-light: #e6f5ff;
    --color-link: #fdcdb7;
+   --color-link-hover: #ff8b56;
 
    --main-font: Verdana, Geneva, sans-serif
    /*--main-font: Consolas, "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
@@ -53,6 +54,15 @@ main {
 .profile-pic {
    border-radius: 50%;
    width: 180px;
+}
+
+.tool-primary {
+   background-color: var(--color-contrast);
+   color: #1b4b43;
+}
+
+.tool-secondary {
+   color: var(--color-link);
 }
 
 /* .content .bg-image {
@@ -118,7 +128,10 @@ a {
     text-decoration: none;
 }
 
-
+a:hover {
+   color: var(--color-link-hover);
+   text-decoration: none;
+}
 
 
 /*
@@ -242,6 +255,9 @@ li.skill .elements li:hover {
    padding-bottom: 16px;
 }
 
+.resume-list a {
+   font-style: italic;
+}
 .time-and-place {
    width: 150px;
 }

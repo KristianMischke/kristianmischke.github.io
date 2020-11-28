@@ -5,7 +5,7 @@
   start-time: 2018
   end-time: 2020
   responsibilities:
-    - description: Developed curriculum based off the book Learning Processing by Daniel Shiffman.
+    - description: Developed curriculum based off the book <a href="http://learningprocessing.com/">Learning Processing</a> by Daniel Shiffman.
     - description: Lead class discussions with PowerPoints & live coding and organized labs to enforce problem solving and debugging skills.
 
 - position: Scratch Programming MS Tutor
@@ -15,8 +15,8 @@
   start-time: 2016
   end-time: 2020
   responsibilities:
-    - description: Taught 7 to 12 students about variables, program flow, and basic problem-solving using MIT’s programming language called Scratch.
-    - description: Integrated my YouTube video tutorials for individualized instruction for the 2018-2020 School Years.
+    - description: Taught 7 to 12 students about variables, program flow, and basic problem-solving using MIT’s programming language called <a href="https://scratch.mit.edu/">Scratch</a>.
+    - description: Integrated my <a href="https://www.youtube.com/channel/UC44hbuzQZteAb82_8QzfBvw">YouTube video tutorials</a> for individualized instruction for the 2018-2020 School Years.
 
 - position: Lego® Robotics MS Tutor
   company: Crossroads Homeschool CO-OP
@@ -37,4 +37,4 @@
   responsibilities:
     - description: Participated in club meetings, events, and game jams
     - description: Acted as Lead Programmer for <a href="https://umbcgamedev.com/games.html#2018-role-playing-gamble">Role Playing Gamble</a>, one of the club 2018-2019 games.
-    - description: Managed tasks with a group of 2 other programmers throughout the duration of the project, using Git for versioning & merging and Unity 3D and C# technologies for development.
+    - description: Managed tasks with a group of 2 other programmers throughout the duration of the project, using <span class="tool-primary">Git</span> for versioning & merging and <span class="tool-primary">Unity 3D</span> & <span class="tool-primary">C#</span> technologies for development.

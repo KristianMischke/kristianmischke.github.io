@@ -63,6 +63,14 @@ home: "true"
             </li>
             {% endfor %}
         </ul>
+        <ul class="project-school-list resume-list">
+         {% for project in site.data.projects-school %}
+         <li>
+             {% assign type = "project" %}
+             {% include resume-project-template.html %}
+         </li>
+         {% endfor %}
+     </ul>
     </section>
 
     <section>
