@@ -57,8 +57,8 @@ main {
 }
 
 .tool-primary {
-   background-color: var(--color-contrast);
-   color: #1b4b43;
+   background-color: #1b4b43;
+   color: var(--color-contrast);
 }
 
 .tool-secondary {
