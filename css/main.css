@@ -1,10 +1,30 @@
+:root {
+   --color-bg1: #121212;
+   --color-bg2: #242424;
+   --color-bg3: #363636;
+   --color-gamma: #82e7d6;
+   --color-contrast: #a8e7e5;
+   --color-light: #e6f5ff;
+   --color-link: #fdcdb7;
+   --color-link-hover: #ff8b56;
+
+   --main-font: Verdana, Geneva, sans-serif
+   /*--main-font: Consolas, "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+   */
+}
+
+p {
+   color: var(--color-light);
+}
+
 body {
     margin:0;
     padding: 0;
-    background: #ebebeb;
+    background: var(--color-bg1);
 }
 
 /* MAIN CONTENT */
+
 
 canvas {
     margin-top: 100px;
@@ -18,12 +38,8 @@ main {
 
     box-sizing: border-box;
 
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    font-size: 20px;
-}
-
-main.home {
-    padding: 0;
+    font-family: var(--main-font);
+    font-size: 16px;
 }
 
 .content {
@@ -32,6 +48,21 @@ main.home {
 
     margin: 0;
     padding: 1rem 2rem;
+    background: var(--color-bg2);
+}
+
+.profile-pic {
+   border-radius: 50%;
+   width: 180px;
+}
+
+.tool-primary {
+   background-color: #1b4b43;
+   color: var(--color-contrast);
+}
+
+.tool-secondary {
+   color: var(--color-link);
 }
 
 /* .content .bg-image {
@@ -76,7 +107,7 @@ code {
     color: crimson;
     background-color: #f1f1f1;
 
-    font-family: Consolas,"courier new";
+    font-family: Consolas, "courier new";
     font-size: 110%
 }
 
@@ -93,11 +124,14 @@ code {
 }
 
 a {
-    color: #00ccff;
+    color: var(--color-link);
     text-decoration: none;
 }
 
-
+a:hover {
+   color: var(--color-link-hover);
+   text-decoration: none;
+}
 
 
 /*
@@ -117,7 +151,7 @@ a {
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 300px;
-    background-color: #555;
+    background-color: var(--color-gamma);
     color: #fff;
     text-align: center;
     padding: 5px 0;
@@ -146,7 +180,7 @@ a {
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent #555 transparent transparent;
+    border-color: transparent var(--color-gamma) transparent transparent;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -164,7 +198,7 @@ a {
 
 /* TECHNICAL SKILLS */
 section h3 {
-    color: #00ccff;
+    color: var(--color-contrast);
 }
 
 li.skill {
@@ -184,27 +218,52 @@ li.skill .elements li {
     padding: 0.5rem 0.5rem;
     list-style-type: none;
 
-    color: #333333;
+    color: var(--color-contrast);
 
-    background-color: #dddddd;
+    background-color: var(--color-bg1);
 
-    border: 1px solid #bbbbbb;
+    border: 2px solid var(--color-contrast);
     border-radius: 2rem;
 }
 
 li.skill .elements li:hover {
-    background-color: #bababa;
+    background-color: var(--color-contrast);
+    border-color: var(--color-bg2);
+    color: var(--color-bg1);
     cursor: pointer;
 }
 
 
 /* WORK EXPERIENCE */
-.job, .project, .activity {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.job, .project, .activity, .education {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
 
-    width: 100%;
+   /*width: 100%;*/
+   background-color: var(--color-bg3);
+}
+
+.resume-list {
+   background-color: var(--color-bg3);
+   list-style-type: none;
+   padding: 0;
+}
+
+.resume-list > li {
+   padding-left: 16px;
+   padding-bottom: 16px;
+}
+
+.resume-list a {
+   font-style: italic;
+}
+.time-and-place {
+   width: 150px;
+}
+
+.responsibility {
+   margin-bottom: 4px;
 }
 
 /* small screens */
@@ -214,25 +273,25 @@ li.skill .elements li:hover {
         padding: 3% 10%;
     }
 
-    main.home {
-        padding: 0;
-    }
+   .job, .project, .activity, .education {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  
+      /*width: 100%;*/
+  }
 
 }
 
 /* large screens */
-@media(min-width:1400px) { 
+@media(min-width:1200px) { 
 
     main {
         padding: 3% 20%;
     }
 
-    main.home {
-        padding: 0;
-    }
-
     main.home .content {
-        padding: 3% 20%;
+        /*padding: 3% 20%;*/
     }
 
 }

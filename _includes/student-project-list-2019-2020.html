@@ -1,0 +1,63 @@
+{% assign sorted = site.student-projects | sort: 'author' | where: "school-year", {{include.school-year}} %}
+{% assign sortedScratch = site.student-projects | sort: 'author' | where: "school-year", {{include.school-year}} | where_exp: "item", "item.class != 'programming'" %}
+{% assign sortedProgramming = site.student-projects | sort: 'author' | where: "school-year", {{include.school-year}} | where: "class", "programming" %}
+
+<h2>Scratch Students</h2>
+{% for item in sortedScratch %}
+   <ul class="project display-wide">
+      <li>
+            {% if item.project-id != "" %}
+            <a href="#{{item.project-id}}" class="tooltip">{{ item.author }}{% if item.author2 %} & {{ item.author2 }}{% endif %}
+               <span class="tooltiptext">Click to see their final project!</span>
+            </a>
+            {% else %}
+            {{item.author}}{% if item.author2 %} & {{ item.author2 }}{% endif %}
+            {% endif %}
+      </li>
+   </ul>
+{% endfor %}
+
+<h2>Programming Students</h2>
+{% for item in sortedProgramming %}
+   <ul class="project display-wide">
+      <li>
+            {% if item.project-link != "" %}
+            <a href="{{item.project-link}}" class="tooltip">{{ item.author }}{% if item.author2 %} & {{ item.author2 }}{% endif %}
+               <span class="tooltiptext">Click to download their final project</span>
+            </a>
+            {% else %}
+            {{item.author}}{% if item.author2 %} & {{ item.author2 }}{% endif %}
+            {% endif %}
+      </li>
+   </ul>
+{% endfor %}
+
+<h2>Tutored by</h2>
+<ul>
+   <li>Kristian Mischke</li>
+   {% if {{include.school-year}} == "2019-2020" %}
+   <li>Duncan Steward</li>
+   {% endif %}
+</ul>
+
+<br/><br/><br/>
+
+{% for item in sorted %}
+   {% if item.title != "" and item.project-id != "" %}
+   <a name="{{item.project-id}}"></a>
+   <div>
+      <h2 class="tooltip">
+         <a href="{{item.author-url}}" target="_blank">{{ item.author }}</a>
+         {% if item.author2 %}
+         & 
+         <a href="{{item.author2-url}}" target="_blank">{{ item.author2 }}</a>
+         {% endif %}
+         <span class="tooltiptext">Click to go to their scratch account</span>
+      </h2>
+      <p>{{ item.title }}</p>
+      <p>{{ item.description }}</p>
+      <p>Click <a href="https://scratch.mit.edu/projects/{{item.project-id}}/" target="_blank">here</a> if project doesn't load</p>
+      <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/{{item.project-id}}/?autostart=false" frameborder="0" allowfullscreen></iframe>
+   </div>
+   {% endif %}
+{% endfor %}

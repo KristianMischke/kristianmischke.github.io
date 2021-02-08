@@ -1,29 +1,41 @@
-- company: Mohawk Games LLC
-  position: Quality Assurance Tester / Software Engineer Intern
-  place: Timonium, MD
-  start-time: June 2017
+- position: Junior Programmer
+  company: <a href="https://www.mohawkgames.com/">Mohawk Games LLC</a>
+  place: Linthicum, MD
+  start-time: Jan 2018
   end-time: Present
   responsibilities:
-    - description: Constructed Loose Quad Tree implementation for object culling
-    - description: Discovered and reported bugs to the developers
-    - description: Repaired bugs in Unity 3D and C# within skill set
-    - description: Worked on Limited Supply DLC additional in-game UI for Offworld Trading Company
+    - description: Integrated <a href="https://mod.io/">mod.io API</a> into <a href="https://www.mohawkgames.com/oldworld/">Old World</a>; added support for modding game assets with AssetBundles; and support for Translation mods.
+    - description: Developed a Text Manager class integrating Mohawk’s localization system with hierarchical text generation (e.g. bullet and comma list building)
+    - description: Implemented the in-game “Event Browser” tool in <a href="https://www.mohawkgames.com/oldworld/">Old World</a> that allows designers and writers to easily modify and create XML files for in-game events.
+    - description: Worked on making <a href="https://www.mohawkgames.com/oldworld/">Old World</a> ready for localization.
+    - description: Wrote a tool for Material Property Management. Allows for the tagging of Material files, and one-click updating of the out-of-sync properties of those objects.
+    - description: Wrote a <span class="tool-primary">Unity</span> tool for Asset Management that allows developers to observe the dependency relations of Unity assets.
+    - description: Used <span class="tool-primary">JIRA</span> task management and <span class="tool-primary">Perforce</span> version control and merged changes in a large repo.
 
-- company: The Suburban Country Club
-  position: Waiter
-  place: Pikesville, MD
-  start-time: July 2016
-  end-time: June 2017
-  responsibilities:
-    - description: Waited tables in an orderly fashion
-    - description: Provided a formal service to the club members
-    - description: Assisted managers with POS Jonas Club Management system when configuring a new menu
-
-- company: Grace Fellowship Church, Kids in the Word (KITW)
-  position: Childcare Teacher/Helper
+- position: Quality Assurance Tester
+  company: <a href="https://www.mohawkgames.com/">Mohawk Games LLC</a>
   place: Timonium, MD
-  start-time: Feb 2015
-  end-time: May 2016
+  start-time: June 2017
+  end-time: Jan 2018
   responsibilities:
-    - description: Took care of children ages 3 to 5
-    - description: Performed the given curricular content
+    - description: Discovered and reported bugs to the developers & repaired bugs in <span class="tool-primary">Unity 3D</span> and <span class="tool-primary">C#</span> within skill set.
+    - description: Worked on Limited Supply DLC additional in-game UI for <a href="https://www.offworldgame.com/">Offworld Trading Company</a>.
+
+#- company: The Suburban Country Club
+#  position: Waiter
+#  place: Pikesville, MD
+#  start-time: July 2016
+#  end-time: June 2017
+#  responsibilities:
+#    - description: Waited tables in an orderly fashion
+#    - description: Provided a formal service to the club members
+#    - description: Assisted managers with POS Jonas Club Management system when configuring a new menu
+#
+#- company: Grace Fellowship Church, Kids in the Word (KITW)
+#  position: Childcare Teacher/Helper
+#  place: Timonium, MD
+#  start-time: Feb 2015
+#  end-time: May 2016
+#  responsibilities:
+#    - description: Took care of children ages 3 to 5
+#    - description: Performed the given curricular content
