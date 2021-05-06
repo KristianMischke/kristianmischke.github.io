@@ -2,259 +2,259 @@
 # EDUCATION
 #
 education:
-  - school: University of Maryland, Baltimore County
-    degree: "Bachelor of Science, Computer Science (Game Development Track)"
-    degree_p2: "Minor in Applied Linguistics"
-    gpa: 3.936
-    place: Baltimore, MD
-    end-time: Expected May 2021
+- school: University of Maryland, Baltimore County
+  degree: "Bachelor of Science, Computer Science (Game Development Track)"
+  degree_p2: "Minor in Applied Linguistics"
+  gpa: 3.936
+  place: Baltimore, MD
+  end-time: Expected May 2021
 #
 # WORK EXPERIENCE
 #
 work-experience:
-  - position: Data Science Research Intern
-    company: <a href="https://www.redshred.com/">RedShred LLC</a>
-    place: Catonsville, MD
-    start-time: March 2021
-    end-time: Present
-    responsibilities:
-      - description: #TODO: Hackathon with the team... Clustering algorithm
-      - description: #TODO: Experimented with SHAP... and used fine-tuning on Transformer models to predict Vendors based on email title data
-      - description: #TODO: Worked with Label Studio to annotate documents for segmentation for CV and NER extraction
-      - description: #TODO: R&D Reports
+- position: Data Science Research Intern
+  company: <a href="https://www.redshred.com/">RedShred LLC</a>
+  place: Catonsville, MD
+  start-time: March 2021
+  end-time: Present
+  responsibilities:
+  - description: #TODO: Hackathon with the team... Clustering algorithm
+  - description: #TODO: Experimented with SHAP... and used fine-tuning on Transformer models to predict Vendors based on email title data
+  - description: #TODO: Worked with Label Studio to annotate documents for segmentation for CV and NER extraction
+  - description: #TODO: R&D Reports
 
-  - position: Junior Programmer
-    company: <a href="https://www.mohawkgames.com/">Mohawk Games LLC</a>
-    place: Linthicum, MD
-    start-time: Jan 2018
-    end-time: Present
-    responsibilities:
-      #TODO: achieved/accomplished, not did
-      - description: Integrated <a href="https://mod.io/">mod.io API</a> into <a href="https://www.mohawkgames.com/oldworld/">Old World</a>; added support for modding game assets with AssetBundles; and support for Translation mods.
-      - description: Developed a Text Manager class integrating Mohawk’s localization system with hierarchical text generation (e.g. bullet and comma list construction)
-      - description: Implemented the in-game “Event Browser” tool in <a href="https://www.mohawkgames.com/oldworld/">Old World</a> that allows designers and writers to easily modify and create XML files for in-game events.
-      - description: Worked on making <a href="https://www.mohawkgames.com/oldworld/">Old World</a> ready for localization.
-      - description: Wrote a tool for Material Property Management. Allows for the tagging of Material files, and one-click updating of the out-of-sync properties of those objects.
-      - description: Wrote a <span class="tool-primary">Unity</span> tool for Asset Management that allows developers to observe the dependency relations of Unity assets.
-      - description: Used <span class="tool-primary">JIRA</span> task management and <span class="tool-primary">Perforce</span> version control and merged changes in a large repo.
+- position: Junior Programmer
+  company: <a href="https://www.mohawkgames.com/">Mohawk Games LLC</a>
+  place: Linthicum, MD
+  start-time: Jan 2018
+  end-time: Present
+  responsibilities:
+  #TODO: achieved/accomplished, not did
+  - description: Integrated <a href="https://mod.io/">mod.io API</a> into <a href="https://www.mohawkgames.com/oldworld/">Old World</a>; added support for modding game assets with AssetBundles; and support for Translation mods.
+  - description: Developed a Text Manager class integrating Mohawk’s localization system with hierarchical text generation (e.g. bullet and comma list construction)
+  - description: Implemented the in-game “Event Browser” tool in <a href="https://www.mohawkgames.com/oldworld/">Old World</a> that allows designers and writers to easily modify and create XML files for in-game events.
+  - description: Worked on making <a href="https://www.mohawkgames.com/oldworld/">Old World</a> ready for localization.
+  - description: Wrote a tool for Material Property Management. Allows for the tagging of Material files, and one-click updating of the out-of-sync properties of those objects.
+  - description: Wrote a <span class="tool-primary">Unity</span> tool for Asset Management that allows developers to observe the dependency relations of Unity assets.
+  - description: Used <span class="tool-primary">JIRA</span> task management and <span class="tool-primary">Perforce</span> version control and merged changes in a large repo.
 
-  - position: Quality Assurance Tester
-    company: <a href="https://www.mohawkgames.com/">Mohawk Games LLC</a>
-    place: Timonium, MD
-    start-time: June 2017
-    end-time: Jan 2018
-    responsibilities:
-      - description: Discovered and reported bugs to the developers & repaired bugs in <span class="tool-primary">Unity 3D</span> and <span class="tool-primary">C#</span> within skill set.
-      - description: Worked on Limited Supply DLC additional in-game UI for <a href="https://www.offworldgame.com/">Offworld Trading Company</a>.
-  #---old, nontechnical work---
-  - company: The Suburban Country Club
-    display: none
-    position: Waiter
-    place: Pikesville, MD
-    start-time: July 2016
-    end-time: June 2017
-    responsibilities:
-      - description: Waited tables in an orderly fashion
-      - description: Provided a formal service to the club members
-      - description: Assisted managers with POS Jonas Club Management system when configuring a new menu
+- position: Quality Assurance Tester
+  company: <a href="https://www.mohawkgames.com/">Mohawk Games LLC</a>
+  place: Timonium, MD
+  start-time: June 2017
+  end-time: Jan 2018
+  responsibilities:
+  - description: Discovered and reported bugs to the developers & repaired bugs in <span class="tool-primary">Unity 3D</span> and <span class="tool-primary">C#</span> within skill set.
+  - description: Worked on Limited Supply DLC additional in-game UI for <a href="https://www.offworldgame.com/">Offworld Trading Company</a>.
+#---old, nontechnical work---
+- company: The Suburban Country Club
+  display: none
+  position: Waiter
+  place: Pikesville, MD
+  start-time: July 2016
+  end-time: June 2017
+  responsibilities:
+  - description: Waited tables in an orderly fashion
+  - description: Provided a formal service to the club members
+  - description: Assisted managers with POS Jonas Club Management system when configuring a new menu
 
-  - company: Grace Fellowship Church, Kids in the Word (KITW)
-    display: none
-    position: Childcare Teacher/Helper
-    place: Timonium, MD
-    start-time: Feb 2015
-    end-time: May 2016
-    responsibilities:
-      - description: Took care of children ages 3 to 5
-      - description: Performed the given curricular content
-  #------
+- company: Grace Fellowship Church, Kids in the Word (KITW)
+  display: none
+  position: Childcare Teacher/Helper
+  place: Timonium, MD
+  start-time: Feb 2015
+  end-time: May 2016
+  responsibilities:
+  - description: Took care of children ages 3 to 5
+  - description: Performed the given curricular content
+#------
 #
 # PROJECTS
 #
 projects:
-  #---PROUD WORK (highlight reel)---
-  - title: Recurring Moment
-    company:
-    position: Game Designer & Programmer
-    start-time: Spring 2021
-    end-time:
-    repository: https://github.com/KristianMischke/RecurringMoment
-    project-description: #TODO: use this field to generate project page of website (but not resume or cv)
-    responsibilities:
-      - description: #TODO: pitched. prototyped. designed. developed.
-      - description: #TODO: worked with team.
+#---PROUD WORK (highlight reel)---
+- title: Recurring Moment
+  company:
+  position: Game Designer & Programmer
+  start-time: Spring 2021
+  end-time:
+  repository: https://github.com/KristianMischke/RecurringMoment
+  project-description: #TODO: use this field to generate project page of website (but not resume or cv)
+  responsibilities:
+  - description: #TODO: pitched. prototyped. designed. developed.
+  - description: #TODO: worked with team.
 
-  - title: GroupFormer
-    company:
-    position: Programmer
-    start-time: Spring 2021
-    end-time:
-    repository: https://github.com/snowminc/Groupformer
-    video-demo: #TODO: video demo
-    project-description: #TODO: use this field to generate project page of website (but not resume or cv)
-    responsibilities:
-      - description: #TODO: focused on front-end
-      - description: #TODO: contributed to algorithm
-      - description: #TODO:
+- title: GroupFormer
+  company:
+  position: Programmer
+  start-time: Spring 2021
+  end-time:
+  repository: https://github.com/snowminc/Groupformer
+  video-demo: #TODO: video demo
+  project-description: #TODO: use this field to generate project page of website (but not resume or cv)
+  responsibilities:
+  - description: #TODO: focused on front-end
+  - description: #TODO: contributed to algorithm
+  - description: #TODO:
 
-  - title: "Schess: A Chess Battle-Royal Variant"
-    company: <a href="http://www.schessgame.com/">schessgame.com</a>
-    position:
-    place:
-    start-time: June 2017
-    end-time: May 2018
-    responsibilities:
-      - description: Acted as the Lead Programmer during a 48-hour game jam with three other friends.
-      - description: Responsible for game-logic, and networking code using <span class="tool-secondary">Remote Procedure Calls (RPCs)</span> with <a href="https://www.photonengine.com/pun">Photon Unity Networking (PUN)</a> in the <span class="tool-primary">Unity 3D</span> game engine.
+- title: "Schess: A Chess Battle-Royal Variant"
+  company: <a href="http://www.schessgame.com/">schessgame.com</a>
+  position:
+  place:
+  start-time: June 2017
+  end-time: May 2018
+  responsibilities:
+  - description: Acted as the Lead Programmer during a 48-hour game jam with three other friends.
+  - description: Responsible for game-logic, and networking code using <span class="tool-secondary">Remote Procedure Calls (RPCs)</span> with <a href="https://www.photonengine.com/pun">Photon Unity Networking (PUN)</a> in the <span class="tool-primary">Unity 3D</span> game engine.
 
-  - title: Luna (Discord Bot)
-      company:
-      position:
-      start-time: Spring 2020
-      end-time:
-      project-description: #TODO: use this field to generate project page of website (but not resume or cv)
-      responsibilities:
-        - description: #TODO:
-        - description: #TODO:
+- title: Luna (Discord Bot)
+  company:
+  position:
+  start-time: Spring 2020
+  end-time:
+  project-description: #TODO: use this field to generate project page of website (but not resume or cv)
+  responsibilities:
+  - description: #TODO:
+  - description: #TODO:
 
-  #---PERSONAL PROJECTS---
-  - title: Keeping Blessing Hill Website
-    position:
-    place:
-    start-time: 2018
-    end-time: 2019
-    responsibilities:
-      - description: Created <a href="http://www.keepingblessinghill.com/">keepingblessinghill.com</a> using <a href="https://jekyllrb.com/">Jekyll</a> & GitHub pages for my grandmother’s blog to promote her book.
+#---PERSONAL PROJECTS---
+- title: Keeping Blessing Hill Website
+  position:
+  place:
+  start-time: 2018
+  end-time: 2019
+  responsibilities:
+  - description: Created <a href="http://www.keepingblessinghill.com/">keepingblessinghill.com</a> using <a href="https://jekyllrb.com/">Jekyll</a> & GitHub pages for my grandmother’s blog to promote her book.
 
-  - title: Drag'n'Drop Coding Tutorial Website
-    position:
-    place:
-    start-time: June 2017
-    end-time: May 2018
-    responsibilities:
-      - description: Created website to showcase my <a href="https://www.youtube.com/channel/UC44hbuzQZteAb82_8QzfBvw">educational programming videos</a> #(dragndropcoding.com)
-      - description: Website had a <a href="https://www.djangoproject.com/">Django</a> backend API and a <a href="https://reactjs.org/">React JS</a> front-end interface.
-      - description: Site currently down (may create showcase at a later date)
+- title: Drag'n'Drop Coding Tutorial Website
+  position:
+  place:
+  start-time: June 2017
+  end-time: May 2018
+  responsibilities:
+  - description: Created website to showcase my <a href="https://www.youtube.com/channel/UC44hbuzQZteAb82_8QzfBvw">educational programming videos</a> #(dragndropcoding.com)
+  - description: Website had a <a href="https://www.djangoproject.com/">Django</a> backend API and a <a href="https://reactjs.org/">React JS</a> front-end interface.
+  - description: Site currently down (may create showcase at a later date)
 
-  #TODO: hackathons/game jams section on website (maybe not resume or cv though)
-  - title: GGJ20 STD The Game
-    display: none
-    repository: https://github.com/KristianMischke/RoboRepair
-    link: https://globalgamejam.org/2020/games/robo-repair-3
-  - title: GGJ18 STD The Game
-    display: none
-    link: https://globalgamejam.org/2018/games/std-game
-    project-description: "Play this two-player (or online multiplayer) game where the goal is to transmit the most diseases to the population of a rounded city. Be sure to watch out because the doctors are coming to cure the people! Oh, and also, there are power-ups. Made for the Global Game Jam 2018 - Theme: Transmission"
-  - title: Stock Stalker
-    display: none
-    repository: https://github.com/KolbeML/StockStalker
-    subtitle: "HackUMBC Project Fall '17"
-    project-description: "Simple Desktop app that displays historical stock data."
+#TODO: hackathons/game jams section on website (maybe not resume or cv though)
+- title: GGJ20 STD The Game
+  display: none
+  repository: https://github.com/KristianMischke/RoboRepair
+  link: https://globalgamejam.org/2020/games/robo-repair-3
+- title: GGJ18 STD The Game
+  display: none
+  link: https://globalgamejam.org/2018/games/std-game
+  project-description: "Play this two-player (or online multiplayer) game where the goal is to transmit the most diseases to the population of a rounded city. Be sure to watch out because the doctors are coming to cure the people! Oh, and also, there are power-ups. Made for the Global Game Jam 2018 - Theme: Transmission"
+- title: Stock Stalker
+  display: none
+  repository: https://github.com/KolbeML/StockStalker
+  subtitle: "HackUMBC Project Fall '17"
+  project-description: "Simple Desktop app that displays historical stock data."
 
-  #TODO: only website? legacy section?
-  - title: Mineocrafte
-    display: none
-    project-description: "I was exploring the creation of the well-known game, minecraft! This is my own game which is similar to it, but will be sci-fi related and will have a bunch of awesomeness! I still need to come up with a name for it, but I think I will wait until later for that. let's just call it \"Mineocrafte\" for now (min - ee - oh - cr - ah - ft -ey)."
-    download: https://drive.google.com/drive/folders/0B0FC64TjZh7EeXVHRnJEY3AtNTA
-    link: https://www.youtube.com/playlist?list=PLR65s-fQrQ_3Az-DtBJyjjLVh9QTUexpE
-  - title: Square Plan
-    display: none
-    project-description: "Fun, simple strategy game where you set up your squares and try to eliminate the opponent"
-  - title: Second Layer
-    display: none
-    project-description: "Minimalistic Puzzle game similar to a 2x2 Rubix Cube and a sliding puzzle. Based on the <a href='https://scratch.mit.edu/projects/48762050/'>Scratch Project by the same name"
-    download: https://drive.google.com/drive/u/0/folders/0B0FC64TjZh7ENHNUS3ZJZ1RrRmM
-  - title: FPS Shooter (The Lost Island)
-    project-description: "This is a basic multiplayer First Person Shooter game. It is one of the first 'fun' playable games that I have created."
-    repository: https://sourceforge.net/projects/multiplayerfps-thelostisland/
-  - title: Snake IO
-    display: none
-    link: https://scratch.mit.edu/projects/113795977/
-    project-description: "Based on the original Snake game as well as the infamous slither.io. This project is made on MIT's drag-n-drop programming software called Scratch. This is my first successful multiplayer game where all the networking was coded by myself. This was a very fun project to work on."
+#TODO: only website? legacy section?
+- title: Mineocrafte
+  display: none
+  project-description: "I was exploring the creation of the well-known game, minecraft! This is my own game which is similar to it, but will be sci-fi related and will have a bunch of awesomeness! I still need to come up with a name for it, but I think I will wait until later for that. let's just call it \"Mineocrafte\" for now (min - ee - oh - cr - ah - ft -ey)."
+  download: https://drive.google.com/drive/folders/0B0FC64TjZh7EeXVHRnJEY3AtNTA
+  link: https://www.youtube.com/playlist?list=PLR65s-fQrQ_3Az-DtBJyjjLVh9QTUexpE
+- title: Square Plan
+  display: none
+  project-description: "Fun, simple strategy game where you set up your squares and try to eliminate the opponent"
+- title: Second Layer
+  display: none
+  project-description: "Minimalistic Puzzle game similar to a 2x2 Rubix Cube and a sliding puzzle. Based on the <a href='https://scratch.mit.edu/projects/48762050/'>Scratch Project by the same name"
+  download: https://drive.google.com/drive/u/0/folders/0B0FC64TjZh7ENHNUS3ZJZ1RrRmM
+- title: FPS Shooter (The Lost Island)
+  project-description: "This is a basic multiplayer First Person Shooter game. It is one of the first 'fun' playable games that I have created."
+  repository: https://sourceforge.net/projects/multiplayerfps-thelostisland/
+- title: Snake IO
+  display: none
+  link: https://scratch.mit.edu/projects/113795977/
+  project-description: "Based on the original Snake game as well as the infamous slither.io. This project is made on MIT's drag-n-drop programming software called Scratch. This is my first successful multiplayer game where all the networking was coded by myself. This was a very fun project to work on."
 
-  #---SCHOOL PROJECTS---
-  - title: Applying the Cascaded Finite State Grammar Induction Model to Trading Card Game Corpora
-    company: CMSC 473 Intro to NLP Class @ UMBC
-    position:
-    place:
-    start-time: Fall 2020
-    end-time:
-    responsibilities:
-      - description: Proposed the original idea for <a href="/media/documents/grammar_induction_tcg_cmsc_473_group_final_project.pdf">this final group project</a>.
-      - description: Implemented–with a group of 3 peers–a <span class="tool-secondary">Grammar Induction</span> algorithm in <span class="tool-primary">Python</span> from an academic paper that uses a cascaded chunking algorithm with <span class="tool-secondary">HMMs</span>.
-      - description: >
-          We analyzed model performance using perplexity, and we applied it to Trading Card Games like <i>Magic: the Gathering</i>, <i>Yu-Gi-Oh!</i> and others.
+#---SCHOOL PROJECTS---
+- title: Applying the Cascaded Finite State Grammar Induction Model to Trading Card Game Corpora
+  company: CMSC 473 Intro to NLP Class @ UMBC
+  position:
+  place:
+  start-time: Fall 2020
+  end-time:
+  responsibilities:
+  - description: Proposed the original idea for <a href="/media/documents/grammar_induction_tcg_cmsc_473_group_final_project.pdf">this final group project</a>.
+  - description: Implemented–with a group of 3 peers–a <span class="tool-secondary">Grammar Induction</span> algorithm in <span class="tool-primary">Python</span> from an academic paper that uses a cascaded chunking algorithm with <span class="tool-secondary">HMMs</span>.
+  - description: >
+      We analyzed model performance using perplexity, and we applied it to Trading Card Games like <i>Magic: the Gathering</i>, <i>Yu-Gi-Oh!</i> and others.
 
-  - title: Linux Chess Kernel Modules
-    company: CMSC 421 Operating Systems class @ UMBC
-    position:
-    place:
-    start-time: Spring 2020
-    end-time:
-    responsibilities:
-      - description: Implemented the device module in the <span class="tool-primary">C</span> programming language to store and manage chess game state across multiple file pointers; with the option to play against an AI opponent using the min-max with alpha-beta pruning algorithm.
-      - description: Only student out of the three sections of the course to complete all the extra credit and be eligible for the course-wide tournament.
-      - description: <span class="tool-primary">Git</span> version control was required for this class to track incremental changes.
+- title: Linux Chess Kernel Modules
+  company: CMSC 421 Operating Systems class @ UMBC
+  position:
+  place:
+  start-time: Spring 2020
+  end-time:
+  responsibilities:
+  - description: Implemented the device module in the <span class="tool-primary">C</span> programming language to store and manage chess game state across multiple file pointers; with the option to play against an AI opponent using the min-max with alpha-beta pruning algorithm.
+  - description: Only student out of the three sections of the course to complete all the extra credit and be eligible for the course-wide tournament.
+  - description: <span class="tool-primary">Git</span> version control was required for this class to track incremental changes.
 
-  - title: Other Note-Worthy Classes from UMBC
-    position:
-    place:
-    start-time: 2018
-    end-time: 2019
-    responsibilities:
-      - description: <i>Computer Graphics</i> (Spring 2020) Implemented <span class="tool-secondary">ray-tracing</span> algorithm in <span class="tool-primary">C++</span>. Used shaders and GLEW and GLSL to push vertices to the render pipeline. We used <span class="tool-primary">Git</span> version control to track progress.
-      - description: <i>Graphics for Games</i> (Fall 2020). Gained more experience navigating a large codebase, namely the <span class="tool-primary">Unreal Engine C++</span> source. Projects focused on implementing graphics algorithms as Blueprints, Plugins, and Engine modifications.
+- title: Other Note-Worthy Classes from UMBC
+  position:
+  place:
+  start-time: 2018
+  end-time: 2019
+  responsibilities:
+  - description: <i>Computer Graphics</i> (Spring 2020) Implemented <span class="tool-secondary">ray-tracing</span> algorithm in <span class="tool-primary">C++</span>. Used shaders and GLEW and GLSL to push vertices to the render pipeline. We used <span class="tool-primary">Git</span> version control to track progress.
+  - description: <i>Graphics for Games</i> (Fall 2020). Gained more experience navigating a large codebase, namely the <span class="tool-primary">Unreal Engine C++</span> source. Projects focused on implementing graphics algorithms as Blueprints, Plugins, and Engine modifications.
 #
 # EXTRA CURRICULAR
 #
 extra-curricular:
-  - position: Web Design MS Volunteer Tutor
-    company: Crossroads Homeschool CO-OP
-    place:
-    time-prefix: "School Years "
-    start-time: 2020
-    end-time: 2021
-    responsibilities:
-      - description: Utilized the <a href="https://codehs.com/">CodeHS</a> online curriculum for managing and tracking student assignments.
-      - description: Co-lead weekly synchronous virtual meetings to discuss concepts and help students with the curriculum.
+- position: Web Design MS Volunteer Tutor
+  company: Crossroads Homeschool CO-OP
+  place:
+  time-prefix: "School Years "
+  start-time: 2020
+  end-time: 2021
+  responsibilities:
+  - description: Utilized the <a href="https://codehs.com/">CodeHS</a> online curriculum for managing and tracking student assignments.
+  - description: Co-lead weekly synchronous virtual meetings to discuss concepts and help students with the curriculum.
 
-  - position: Programming HS Volunteer Tutor
-    company: Crossroads Homeschool CO-OP
-    place:
-    time-prefix: "School Years "
-    start-time: 2018
-    end-time: 2020
-    responsibilities:
-      - description: Developed curriculum based off the book <a href="http://learningprocessing.com/">Learning Processing</a> by Daniel Shiffman.
-      - description: Lead class discussions with PowerPoints & live coding and organized labs to enforce problem solving and debugging skills.
+- position: Programming HS Volunteer Tutor
+  company: Crossroads Homeschool CO-OP
+  place:
+  time-prefix: "School Years "
+  start-time: 2018
+  end-time: 2020
+  responsibilities:
+  - description: Developed curriculum based off the book <a href="http://learningprocessing.com/">Learning Processing</a> by Daniel Shiffman.
+  - description: Lead class discussions with PowerPoints & live coding and organized labs to enforce problem solving and debugging skills.
 
-  - position: Scratch Programming MS Tutor
-    company: Crossroads Homeschool CO-OP
-    place:
-    time-prefix: "School Years "
-    start-time: 2016
-    end-time: 2020
-    responsibilities:
-      - description: Taught 7 to 12 students about variables, program flow, and basic problem-solving using MIT’s programming language called <a href="https://scratch.mit.edu/">Scratch</a>.
-      - description: Integrated my <a href="https://www.youtube.com/channel/UC44hbuzQZteAb82_8QzfBvw">YouTube video tutorials</a> for individualized instruction for the 2018-2020 School Years.
+- position: Scratch Programming MS Tutor
+  company: Crossroads Homeschool CO-OP
+  place:
+  time-prefix: "School Years "
+  start-time: 2016
+  end-time: 2020
+  responsibilities:
+  - description: Taught 7 to 12 students about variables, program flow, and basic problem-solving using MIT’s programming language called <a href="https://scratch.mit.edu/">Scratch</a>.
+  - description: Integrated my <a href="https://www.youtube.com/channel/UC44hbuzQZteAb82_8QzfBvw">YouTube video tutorials</a> for individualized instruction for the 2018-2020 School Years.
 
-  - position: Lego® Robotics MS Tutor
-    company: Crossroads Homeschool CO-OP
-    place:
-    time-prefix: "School Years "
-    start-time: 2014
-    end-time: 2016
-    responsibilities:
-      - description: While still in high school, taught the beginner and advanced classes using a pre-made curriculum.
-      - description: Guided students through the process of thinking critically when solving problems with the Mindstorms® NXT 2.0 platform.
+- position: Lego® Robotics MS Tutor
+  company: Crossroads Homeschool CO-OP
+  place:
+  time-prefix: "School Years "
+  start-time: 2014
+  end-time: 2016
+  responsibilities:
+  - description: While still in high school, taught the beginner and advanced classes using a pre-made curriculum.
+  - description: Guided students through the process of thinking critically when solving problems with the Mindstorms® NXT 2.0 platform.
 
-  - position: Member & Project Lead Programmer
-    company: <a href="https://umbcgamedev.com/">UMBC Game Developers Club</a>
-    place:
-    time-prefix:
-    start-time: Fall 2018
-    end-time: Fall 2019
-    responsibilities:
-      - description: Participated in club meetings, events, and game jams
-      - description: Acted as Lead Programmer for <a href="https://umbcgamedev.com/games.html#2018-role-playing-gamble">Role Playing Gamble</a>, one of the club 2018-2019 games.
-      - description: Managed tasks with a group of 2 other programmers throughout the duration of the project, using <span class="tool-primary">Git</span> for versioning & merging and <span class="tool-primary">Unity 3D</span> & <span class="tool-primary">C#</span> technologies for development.
+- position: Member & Project Lead Programmer
+  company: <a href="https://umbcgamedev.com/">UMBC Game Developers Club</a>
+  place:
+  time-prefix:
+  start-time: Fall 2018
+  end-time: Fall 2019
+  responsibilities:
+  - description: Participated in club meetings, events, and game jams
+  - description: Acted as Lead Programmer for <a href="https://umbcgamedev.com/games.html#2018-role-playing-gamble">Role Playing Gamble</a>, one of the club 2018-2019 games.
+  - description: Managed tasks with a group of 2 other programmers throughout the duration of the project, using <span class="tool-primary">Git</span> for versioning & merging and <span class="tool-primary">Unity 3D</span> & <span class="tool-primary">C#</span> technologies for development.
