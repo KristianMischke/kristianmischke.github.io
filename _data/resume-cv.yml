@@ -90,28 +90,40 @@ projects:
   position: Game Designer & Programmer
   start-time: Spring 2021
   end-time:
+  icon: "/media/images/project images/RecurringMoment_icon.png"
+  gallary:
+    - path: "/media/images/project images/RecurringMoment_01.png"
+  buttons:
+    - url: https://github.com/KristianMischke/RecurringMoment/releases
+      message: Download
   repository: https://github.com/KristianMischke/RecurringMoment
-  project-description: #TODO: use this field to generate project page of website (but not resume or cv)
+  project-description: "Time-travel puzzle platformer video game developed for the Spring 2021 CMSC 493 Game Capstone Class at UMBC. Game mechanics are inspired by the feature film <a href='https://www.imdb.com/title/tt0390384/'>Primer (2004)</a>. Game developed in <span class='tool-primary'>Unity 3D</span> and <span class='tool-primary'>C#</span>. Alpha demoed at <a href='https://umbc.voicethread.com/myvoice/thread/17391629/110295400/102619788'>URCAD 2021</a>"
   responsibilities:
-  - description: #TODO: pitched. prototyped. designed. developed.
-  - description: #TODO: worked with team.
+  - description: Conceptualized, Pitched, and Prototyped original idea during the first 3 weeks of class.
+  - description: Acted as Lead Designer and interfaced with the Art & Programming teams at weekly meetings.
+  - description: Implemented core mechanics and sparse data structures to store time-travel data.
 
 - title: GroupFormer
   priority: 99
   tags:
     - resume
     - home
+  buttons:
+    - url: https://github.com/snowminc/Groupformer
+      message: GitHub
+    - url: https://groupformer.herokuapp.com/
+        message: Website
   company:
   position: Programmer
   start-time: Spring 2021
   end-time:
   repository: https://github.com/snowminc/Groupformer
-  video-demo: #TODO: video demo
-  project-description: #TODO: use this field to generate project page of website (but not resume or cv)
+  video-demo: <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6ikItt-gD0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  project-description: Web-app built for the Spring 2021 CMSC 447 Software Engineering class at UMBC. Enables users to easily set up forms for grouping people into different projects based on their interests and who they want to work with.
   responsibilities:
-  - description: #TODO: focused on front-end
-  - description: #TODO: contributed to algorithm
-  - description: #TODO:
+  - description: Developed front-end form for setting up the GroupFormer project using <span class='tool-primary'>Django</span>, <span class='tool-primary'>HTML</span>, and <span class='tool-primary'>JQuery</span>.
+  - description: Collaborated with teammates to develop algorithm for scoring participant groupings.
+  - description: Integrated Django authentication to secure instructor's forms.
 
 - title: "Schess: A Chess Battle-Royal Variant"
   priority: 98
@@ -119,10 +131,17 @@ projects:
     - resume
     - home
   company: <a href="http://www.schessgame.com/">schessgame.com</a>
-  position:
+  position: Lead Programmer
   place:
-  start-time: June 2017
-  end-time: May 2018
+  start-time: Aug 2020
+  end-time: Present
+  project-description: Schess is a multiplayer battle-royal chess variant where players move their pieces simultaneously each turn and must fight using the modified rules to be the last player standing! The game is developed by a small team of 4 friends and is in prototype/alpha condition (feedback is much appreciated!)
+  gallary:
+    - path: "/media/images/project images/Schess_01.png"
+  video-demo: <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6eihx6GiB_Q?start=413" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  buttons:
+    - url: http://www.schessgame.com/
+      message: Website
   responsibilities:
   - description: Acted as the Lead Programmer during a 48-hour game jam with three other friends.
   - description: Responsible for game-logic, and networking code using <span class="tool-secondary">Remote Procedure Calls (RPCs)</span> with <a href="https://www.photonengine.com/pun">Photon Unity Networking (PUN)</a> in the <span class="tool-primary">Unity 3D</span> game engine.
@@ -134,17 +153,19 @@ projects:
     - home
   icon: "/media/images/project images/luna.png"
   gallary:
-    - "/media/images/project images/luna_important.png"
-    - "/media/images/project images/luna_funny.png"
-    - "/media/images/project images/luna_stats.png"
+    - path: "/media/images/project images/luna_important.png"
+    - path: "/media/images/project images/luna_funny.png"
+      custom-width: 350px
+    - path: "/media/images/project images/luna_stats.png"
+      custom-width: 350px
   company:
   position:
   start-time: Spring 2020
-  end-time:
-  project-description: #TODO: use this field to generate project page of website (but not resume or cv)
-  responsibilities:
-  - description: #TODO:
-  - description: #TODO:
+  end-time: Present
+  project-description: Discord Bot that serves as a playground and testbed for NLP learning (currently limited to select private servers). Learns to mimic users' responses using <span class="tool-secondary">Stupid Backoff Markov Chains</span>. Can filter and find important messages in a given window using <span class="tool-secondary">Pointwise Mutual Information (PMI)</span>. Has other fun hidden features to make me and my friends laugh.
+#  responsibilities:
+#    - description: #TODO:
+#    - description: #TODO:
 
 #---PERSONAL PROJECTS---
 - title: Keeping Blessing Hill Website
@@ -156,6 +177,8 @@ projects:
   place:
   start-time: 2018
   end-time: 2019
+  gallary:
+    - path: "/media/images/project images/KeepingBlessingHill.png"
   responsibilities:
   - description: Created <a href="http://www.keepingblessinghill.com/">keepingblessinghill.com</a> using <a href="https://jekyllrb.com/">Jekyll</a> & GitHub pages for my grandmother’s blog to promote her book.
 
@@ -241,7 +264,7 @@ projects:
   end-time: 2019
   responsibilities:
   - description: <i>Computer Graphics</i> (Spring 2020) Implemented <span class="tool-secondary">ray-tracing</span> algorithm in <span class="tool-primary">C++</span>. Used shaders and GLEW and GLSL to push vertices to the render pipeline. We used <span class="tool-primary">Git</span> version control to track progress.
-  - description: <i>Graphics for Games</i> (Fall 2020). Gained more experience navigating a large codebase, namely the <span class="tool-primary">Unreal Engine C++</span> source. Projects focused on implementing graphics algorithms as Blueprints, Plugins, and Engine modifications.
+  - description: <i>Graphics for Games</i> (Fall 2020). Navigated the <span class="tool-primary">Unreal Engine C++</span> source code. Projects focused on implementing graphics algorithms as Blueprints, Plugins, and Engine modifications.
 #
 # EXTRA CURRICULAR
 #

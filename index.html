@@ -4,27 +4,46 @@ home: "false"
 ---
 <div class="content">
 
+    <section>
+        <img class="profile-pic" src="media/images/profile_2.jpeg" />
+        <h1>Kristian Mischke</h1>
+        <a href="/media/documents/KristianMischkeResume2021.pdf">[PDF Resume]</a>
+        <p style="text-align: justify">Problem-solver and thinker with just over four years of experience in the industry. I enjoy
+            video game development and am passionate about education and (computational) linguistics.
+        </p>
+    </section>
+
+    <h1>Project Showcase:</h1>
     {% assign sorted = site.data.resume-cv.projects | sort: 'priority' | reverse %}
     {% for item in sorted %}
         {% if item.tags contains 'home' %}
+        <hr>
         <div class="old-project display-wide">
-            <h2 style="height:180px;"><img class="profile-pic" style="vertical-align:middle; margin-right:20px;" src="{{ item.icon }}" />{{ item.title }}</h2>
-            <p>{{ item.subtitle }}</p>
-            <p>{{ item.description }}</p>
+            <h2>
+                {% if item.icon %}
+                <img class="profile-pic" style="height:180px;vertical-align:middle; margin-right:20px;" src="{{ item.icon }}" />
+                {% endif %}
+                {{ item.title }}
+            </h2>
+            <p>{{ item.project-description }}</p>
+            {% if item.responsibilities %}
+            <h3>My Responsibilities:</h3>
             <ul>
                 {% for r in item.responsibilities %}
                 <li>{{ r.description }}</li>
                 {% endfor %}
             </ul>
+            {% endif %}
+            {{ item.video-demo }}
             {% for gallary_image in item.gallary %}
-            <img width="350px" src="{{ gallary_image }}"/>
+            <img width="{% if gallary_image.custom-width %}{{ gallary_image.custom-width }}{% else %}100%{% endif %}"
+                 src="{{ gallary_image.path }}"/>
             {% endfor %}
             <div class="button-container">
                 {% for button in item.buttons %}
                 <a class="projectButton" href="{{ button.url }}">{{ button.message }}</a>
                 {% endfor %}
             </div>
-            <div class="img-container" style='background-image: url("{{ item.image }}")'></div>
         </div>
         {% endif %}
     {% endfor %}
