@@ -111,7 +111,7 @@ projects:
   buttons:
     - url: https://github.com/snowminc/Groupformer
       message: GitHub
-    - url: https://groupformer.herokuapp.com/
+    - url: https://groupformer.herokuapp.com
       message: Website
   company:
   position: Programmer
