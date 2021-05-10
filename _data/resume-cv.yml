@@ -74,6 +74,10 @@ work-experience:
 projects:
 #---PROUD WORK (highlight reel)---
 - title: Recurring Moment
+  priority: 100
+  tags:
+    - resume
+    - home
   company:
   position: Game Designer & Programmer
   start-time: Spring 2021
@@ -85,6 +89,10 @@ projects:
   - description: #TODO: worked with team.
 
 - title: GroupFormer
+  priority: 99
+  tags:
+    - resume
+    - home
   company:
   position: Programmer
   start-time: Spring 2021
@@ -98,6 +106,10 @@ projects:
   - description: #TODO:
 
 - title: "Schess: A Chess Battle-Royal Variant"
+  priority: 98
+  tags:
+    - resume
+    - home
   company: <a href="http://www.schessgame.com/">schessgame.com</a>
   position:
   place:
@@ -108,6 +120,15 @@ projects:
   - description: Responsible for game-logic, and networking code using <span class="tool-secondary">Remote Procedure Calls (RPCs)</span> with <a href="https://www.photonengine.com/pun">Photon Unity Networking (PUN)</a> in the <span class="tool-primary">Unity 3D</span> game engine.
 
 - title: Luna (Discord Bot)
+  priority: 97
+  tags:
+    - resume
+    - home
+  icon: "/media/images/project images/luna.png"
+  gallary:
+    - "/media/images/project images/luna_important.png"
+    - "/media/images/project images/luna_funny.png"
+    - "/media/images/project images/luna_stats.png"
   company:
   position:
   start-time: Spring 2020
@@ -119,6 +140,10 @@ projects:
 
 #---PERSONAL PROJECTS---
 - title: Keeping Blessing Hill Website
+  priority: 80
+  tags:
+    - resume
+    - home
   position:
   place:
   start-time: 2018
@@ -127,6 +152,10 @@ projects:
   - description: Created <a href="http://www.keepingblessinghill.com/">keepingblessinghill.com</a> using <a href="https://jekyllrb.com/">Jekyll</a> & GitHub pages for my grandmother’s blog to promote her book.
 
 - title: Drag'n'Drop Coding Tutorial Website
+  priority: 79
+  tags:
+    - resume
+    - home
   position:
   place:
   start-time: June 2017
@@ -138,42 +167,39 @@ projects:
 
 #TODO: hackathons/game jams section on website (maybe not resume or cv though)
 - title: GGJ20 STD The Game
-  display: none
   repository: https://github.com/KristianMischke/RoboRepair
   link: https://globalgamejam.org/2020/games/robo-repair-3
 - title: GGJ18 STD The Game
-  display: none
   link: https://globalgamejam.org/2018/games/std-game
   project-description: "Play this two-player (or online multiplayer) game where the goal is to transmit the most diseases to the population of a rounded city. Be sure to watch out because the doctors are coming to cure the people! Oh, and also, there are power-ups. Made for the Global Game Jam 2018 - Theme: Transmission"
 - title: Stock Stalker
-  display: none
   repository: https://github.com/KolbeML/StockStalker
   subtitle: "HackUMBC Project Fall '17"
   project-description: "Simple Desktop app that displays historical stock data."
 
 #TODO: only website? legacy section?
 - title: Mineocrafte
-  display: none
   project-description: "I was exploring the creation of the well-known game, minecraft! This is my own game which is similar to it, but will be sci-fi related and will have a bunch of awesomeness! I still need to come up with a name for it, but I think I will wait until later for that. let's just call it \"Mineocrafte\" for now (min - ee - oh - cr - ah - ft -ey)."
   download: https://drive.google.com/drive/folders/0B0FC64TjZh7EeXVHRnJEY3AtNTA
   link: https://www.youtube.com/playlist?list=PLR65s-fQrQ_3Az-DtBJyjjLVh9QTUexpE
 - title: Square Plan
-  display: none
   project-description: "Fun, simple strategy game where you set up your squares and try to eliminate the opponent"
 - title: Second Layer
-  display: none
   project-description: "Minimalistic Puzzle game similar to a 2x2 Rubix Cube and a sliding puzzle. Based on the <a href='https://scratch.mit.edu/projects/48762050/'>Scratch Project by the same name"
   download: https://drive.google.com/drive/u/0/folders/0B0FC64TjZh7ENHNUS3ZJZ1RrRmM
 - title: FPS Shooter (The Lost Island)
   project-description: "This is a basic multiplayer First Person Shooter game. It is one of the first 'fun' playable games that I have created."
   repository: https://sourceforge.net/projects/multiplayerfps-thelostisland/
 - title: Snake IO
-  display: none
   link: https://scratch.mit.edu/projects/113795977/
   project-description: "Based on the original Snake game as well as the infamous slither.io. This project is made on MIT's drag-n-drop programming software called Scratch. This is my first successful multiplayer game where all the networking was coded by myself. This was a very fun project to work on."
 
 #---SCHOOL PROJECTS---
 - title: Applying the Cascaded Finite State Grammar Induction Model to Trading Card Game Corpora
+  priority: 60
+  tags:
+    - resume
+    - home
   company: CMSC 473 Intro to NLP Class @ UMBC
   position:
   place:
@@ -186,6 +212,8 @@ projects:
       We analyzed model performance using perplexity, and we applied it to Trading Card Games like <i>Magic: the Gathering</i>, <i>Yu-Gi-Oh!</i> and others.
 
 - title: Linux Chess Kernel Modules
+  tags:
+    - resume
   company: CMSC 421 Operating Systems class @ UMBC
   position:
   place:
@@ -197,6 +225,8 @@ projects:
   - description: <span class="tool-primary">Git</span> version control was required for this class to track incremental changes.
 
 - title: Other Note-Worthy Classes from UMBC
+  tags:
+    - resume
   position:
   place:
   start-time: 2018
