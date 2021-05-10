@@ -92,7 +92,7 @@ projects:
   end-time:
   icon: "/media/images/project images/RecurringMoment_icon.png"
   gallary:
-    - path: "/media/images/project images/RecurringMoment_01.png"
+    - path: "/media/images/project images/RecurringMoment_01.PNG"
   buttons:
     - url: https://github.com/KristianMischke/RecurringMoment/releases
       message: Download
@@ -137,7 +137,7 @@ projects:
   end-time: Present
   project-description: Schess is a multiplayer battle-royal chess variant where players move their pieces simultaneously each turn and must fight using the modified rules to be the last player standing! The game is developed by a small team of 4 friends and is in prototype/alpha condition (feedback is much appreciated!)
   gallary:
-    - path: "/media/images/project images/Schess_01.png"
+    - path: "/media/images/project images/Schess_01.PNG"
   video-demo: <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6eihx6GiB_Q?start=413" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   buttons:
     - url: http://www.schessgame.com/
@@ -153,10 +153,10 @@ projects:
     - home
   icon: "/media/images/project images/luna.png"
   gallary:
-    - path: "/media/images/project images/luna_important.png"
+    - path: "/media/images/project images/luna_important.PNG"
     - path: "/media/images/project images/luna_funny.png"
       custom-width: 350px
-    - path: "/media/images/project images/luna_stats.png"
+    - path: "/media/images/project images/luna_stats.PNG"
       custom-width: 350px
   company:
   position:
@@ -178,7 +178,7 @@ projects:
   start-time: 2018
   end-time: 2019
   gallary:
-    - path: "/media/images/project images/KeepingBlessingHill.png"
+    - path: "/media/images/project images/KeepingBlessingHill.PNG"
   responsibilities:
   - description: Created <a href="http://www.keepingblessinghill.com/">keepingblessinghill.com</a> using <a href="https://jekyllrb.com/">Jekyll</a> & GitHub pages for my grandmother’s blog to promote her book.
 
