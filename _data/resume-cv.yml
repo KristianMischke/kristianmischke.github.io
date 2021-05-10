@@ -112,7 +112,7 @@ projects:
     - url: https://github.com/snowminc/Groupformer
       message: GitHub
     - url: https://groupformer.herokuapp.com/
-        message: Website
+      message: Website
   company:
   position: Programmer
   start-time: Spring 2021
