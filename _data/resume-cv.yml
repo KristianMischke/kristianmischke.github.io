@@ -5,6 +5,7 @@ education:
 - school: University of Maryland, Baltimore County
   degree: "Bachelor of Science, Computer Science (Game Development Track)"
   degree_p2: "Minor in Applied Linguistics"
+  degree_p3: "Outstanding Senior in Computer Science"
   gpa: 3.936
   place: Baltimore, MD
   end-time: Expected May 2021
@@ -13,17 +14,23 @@ education:
 #
 work-experience:
 - position: Data Science Research Intern
+  tags:
+    - resume
+    - cv
   company: <a href="https://www.redshred.com/">RedShred LLC</a>
   place: Catonsville, MD
   start-time: March 2021
   end-time: Present
   responsibilities:
-  - description: #TODO: Hackathon with the team... Clustering algorithm
-  - description: #TODO: Experimented with SHAP... and used fine-tuning on Transformer models to predict Vendors based on email title data
-  - description: #TODO: Worked with Label Studio to annotate documents for segmentation for CV and NER extraction
-  - description: #TODO: R&D Reports
+  - description: Achieved .909 median f1-score with fine-tuned <span class="tool-secondary">BERT</span> and <span class="tool-secondary">RoBerta</span> transformer models on email title classification task, which outperformed the 0.78 of simpler ML models.
+  - description: Used <span class="tool-primary">Label Studio</span> to quickly annotate documents for custom datasets involving CV document segmentation and text <span class="tool-secondary">NER extraction</span>.
+  #TODO: Experimented with SHAP...
+  #TODO: R&D Reports
 
 - position: Junior Programmer
+  tags:
+    - resume
+    - cv
   company: <a href="https://www.mohawkgames.com/">Mohawk Games LLC</a>
   place: Linthicum, MD
   start-time: Jan 2018
@@ -39,6 +46,9 @@ work-experience:
   - description: Used <span class="tool-primary">JIRA</span> task management and <span class="tool-primary">Perforce</span> version control and merged changes in a large repo.
 
 - position: Quality Assurance Tester
+  tags:
+    - resume
+    - cv
   company: <a href="https://www.mohawkgames.com/">Mohawk Games LLC</a>
   place: Timonium, MD
   start-time: June 2017
@@ -46,9 +56,8 @@ work-experience:
   responsibilities:
   - description: Discovered and reported bugs to the developers & repaired bugs in <span class="tool-primary">Unity 3D</span> and <span class="tool-primary">C#</span> within skill set.
   - description: Worked on Limited Supply DLC additional in-game UI for <a href="https://www.offworldgame.com/">Offworld Trading Company</a>.
-#---old, nontechnical work---
+#---old, nontechnical work (don't tag)---
 - company: The Suburban Country Club
-  display: none
   position: Waiter
   place: Pikesville, MD
   start-time: July 2016
@@ -59,7 +68,6 @@ work-experience:
   - description: Assisted managers with POS Jonas Club Management system when configuring a new menu
 
 - company: Grace Fellowship Church, Kids in the Word (KITW)
-  display: none
   position: Childcare Teacher/Helper
   place: Timonium, MD
   start-time: Feb 2015
@@ -239,6 +247,8 @@ projects:
 #
 extra-curricular:
 - position: Web Design MS Volunteer Tutor
+  tags:
+    - resume
   company: Crossroads Homeschool CO-OP
   place:
   time-prefix: "School Years "
@@ -249,6 +259,8 @@ extra-curricular:
   - description: Co-lead weekly synchronous virtual meetings to discuss concepts and help students with the curriculum.
 
 - position: Programming HS Volunteer Tutor
+  tags:
+    - resume
   company: Crossroads Homeschool CO-OP
   place:
   time-prefix: "School Years "
@@ -259,6 +271,8 @@ extra-curricular:
   - description: Lead class discussions with PowerPoints & live coding and organized labs to enforce problem solving and debugging skills.
 
 - position: Scratch Programming MS Tutor
+  tags:
+    - resume
   company: Crossroads Homeschool CO-OP
   place:
   time-prefix: "School Years "
@@ -269,6 +283,8 @@ extra-curricular:
   - description: Integrated my <a href="https://www.youtube.com/channel/UC44hbuzQZteAb82_8QzfBvw">YouTube video tutorials</a> for individualized instruction for the 2018-2020 School Years.
 
 - position: Lego® Robotics MS Tutor
+  tags:
+    - resume
   company: Crossroads Homeschool CO-OP
   place:
   time-prefix: "School Years "
@@ -279,6 +295,8 @@ extra-curricular:
   - description: Guided students through the process of thinking critically when solving problems with the Mindstorms® NXT 2.0 platform.
 
 - position: Member & Project Lead Programmer
+  tags:
+    - resume
   company: <a href="https://umbcgamedev.com/">UMBC Game Developers Club</a>
   place:
   time-prefix:

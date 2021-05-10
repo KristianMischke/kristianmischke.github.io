@@ -16,27 +16,24 @@ home: "true"
     </section>-->
 
    <section>
-      <img class="profile-pic" src="media/images/profile_0.JPG" />
+      <img class="profile-pic" src="media/images/profile_2.jpeg" />
       <h1>Kristian Mischke</h1>
       <a href="/media/documents/KristianMischkeResume2021.pdf">[PDF Resume]</a>
-      <p style="text-align: justify">Diligent student with over three years of experience in the industry. Enthusiastic
-         about education and has enjoyed teaching programming basics to middle- and high-schoolers for the past 5 years.
-         My degree focuses on Game Development and I have worked in the industry as a Junior Programmer for a couple
-         years now and have worked on multiple game-jams and hobby projects. I am looking to eventually pursue a
-         master’s degree in Computational Linguistics and build a career focused on Natural Language Processing (NLP)
-         and Human Computer Interfaces (HCI).<!--I love learning languages and have achieved intermediate German fluency
-         and want to bring that fluency higher and pursue other languages like Russian, ancient Greek, and a middle
-         eastern language.--></p>
+      <p style="text-align: justify">Problem-solver and thinker with just over four years of experience in the industry. I enjoy
+         video game development, and am passionate about education and (computational) linguistics.
+      </p>
    </section>
 
    <section>
       <h3>Experience</h3>
       <ul class="job-list resume-list">
-         {% for project in site.data.jobs %}
-         <li>
-            {% assign type = "job" %}
-            {% include resume-project-template.html %}
-         </li>
+         {% for project in site.data.resume-cv.work-experience %}
+            {% if project.tags contains 'resume' %}
+            <li>
+               {% assign type = "job" %}
+               {% include resume-project-template.html %}
+            </li>
+            {% endif %}
          {% endfor %}
       </ul>
    </section>
@@ -44,12 +41,13 @@ home: "true"
    <section>
       <h3>Education</h3>
       <ul class="education-list resume-list">
-         {% for education in site.data.education %}
+         {% for education in site.data.resume-cv.education %}
          <li class="education">
             <div>
                <h4>{{ education.school }}</h4>
                <p>{{ education.degree }}</p>
                <p>{{ education.degree_p2 }}</p>
+               <p>{{ education.degree_p3 }}</p>
                {% if education.gpa %}<p>{{ education.gpa }} GPA</p>{% endif %}
             </div>
             <div>
@@ -62,22 +60,15 @@ home: "true"
    </section>
 
    <section>
-      <h3>School Projects</h3>
-      <ul class="project-school-list resume-list">
-         {% for project in site.data.projects-school %}
-         <li>
-            {% assign type = "project" %}
-            {% include resume-project-template.html %}
-         </li>
-         {% endfor %}
-      </ul>
-      <h3>Personal Projects</h3>
+      <h3>Projects</h3>
       <ul class="project-list resume-list">
-         {% for project in site.data.projects %}
-         <li>
-            {% assign type = "project" %}
-            {% include resume-project-template.html %}
-         </li>
+         {% for project in site.data.resume-cv.projects %}
+            {% if project.tags contains 'resume' %}
+            <li>
+               {% assign type = "project" %}
+               {% include resume-project-template.html %}
+            </li>
+            {% endif %}
          {% endfor %}
       </ul>
    </section>
@@ -85,11 +76,13 @@ home: "true"
    <section>
       <h3>Volunteer Work & Clubs</h3>
       <ul class="extra-activities-list resume-list">
-         {% for project in site.data.extra-curricular-activities %}
-         <li>
-            {% assign type = "activity" %}
-            {% include resume-project-template.html %}
-         </li>
+         {% for project in site.data.resume-cv.extra-curricular %}
+            {% if project.tags contains 'resume' %}
+            <li>
+               {% assign type = "activity" %}
+               {% include resume-project-template.html %}
+            </li>
+            {% endif %}
          {% endfor %}
       </ul>
    </section>
