@@ -27,7 +27,7 @@ home: "true"
    <section>
       <h3>Experience</h3>
       <ul class="job-list resume-list">
-         {% for project in site.data.resume-cv.work-experience %}
+         {% for project in site.data.resume-cv.work_experience %}
             {% if project.tags contains 'resume' %}
             <li>
                {% assign type = "job" %}
@@ -52,7 +52,7 @@ home: "true"
             </div>
             <div>
                <p>{{ education.place }}</p>
-               <p>{{ education.end-time }}</p>
+               <p>{{ education.end_time }}</p>
             </div>
          </li>
          {% endfor %}
@@ -76,7 +76,7 @@ home: "true"
    <section>
       <h3>Volunteer Work & Clubs</h3>
       <ul class="extra-activities-list resume-list">
-         {% for project in site.data.resume-cv.extra-curricular %}
+         {% for project in site.data.resume-cv.extra_curricular %}
             {% if project.tags contains 'resume' %}
             <li>
                {% assign type = "activity" %}

@@ -1,0 +1,248 @@
+% This file was converted to LaTeX by Writer2LaTeX ver. 1.6.1
+% see http://writer2latex.sourceforge.net for more info
+\documentclass[letterpaper]{article}
+\usepackage[ascii]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb,amsfonts,textcomp}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{color}
+\usepackage{array}
+\usepackage{hhline}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, urlcolor=blue, pdftitle=, pdfauthor=Kristian Mischke, pdfsubject=, pdfkeywords=}
+% Text styles
+\newcommand\textstyleHeadingivChar[1]{\textit{\textcolor[rgb]{0.6784314,0.30980393,0.05882353}{#1}}}
+\newcommand\textstyleToolPrimaryChar[1]{\textcolor[rgb]{0.18039216,0.45490196,0.70980394}{#1}}
+\newcommand\textstyleHyperlink[1]{\textcolor[rgb]{0.019607844,0.3882353,0.75686276}{#1}}
+\newcommand\textstyleHeadingiiiChar[1]{\textit{#1}}
+% Outline numbering
+\setcounter{secnumdepth}{0}
+% Page layout (geometry)
+\setlength\voffset{-1in}
+\setlength\hoffset{-1in}
+\setlength\topmargin{0.5in}
+\setlength\oddsidemargin{0.5in}
+\setlength\textheight{10.0in}
+\setlength\textwidth{7.5in}
+\setlength\footskip{0.0cm}
+\setlength\headheight{0cm}
+\setlength\headsep{0cm}
+% Footnote rule
+\setlength{\skip\footins}{1.1777999mm}
+\renewcommand\footnoterule{\vspace*{-0.007in}\setlength\leftskip{0pt}\setlength\rightskip{0pt plus 1fil}\noindent\textcolor{black}{\rule{0.33\columnwidth}{0.007in}}\vspace*{1mm}}
+% Pages styles
+\makeatletter
+\newcommand\ps@MP{
+  \renewcommand\@oddhead{}
+  \renewcommand\@evenhead{}
+  \renewcommand\@oddfoot{}
+  \renewcommand\@evenfoot{}
+  \renewcommand\thepage{\arabic{page}}
+}
+\makeatother
+\pagestyle{MP}
+% List styles
+\newcommand\liststyleLFOii{%
+\renewcommand\labelitemi{{}-}
+\renewcommand\labelitemii{o}
+\renewcommand\labelitemiii{${\blacksquare}$}
+\renewcommand\labelitemiv{{\textbullet}}
+}
+\newcommand\liststyleLFOi{%
+\renewcommand\labelitemi{{}-}
+\renewcommand\labelitemii{o}
+\renewcommand\labelitemiii{${\blacksquare}$}
+\renewcommand\labelitemiv{{\textbullet}}
+}
+\title{}
+\author{Kristian Mischke}
+\date{2021-05-15}
+\begin{document}
+\clearpage\clearpage\pagestyle{MP}
+{\color[rgb]{0.26666668,0.44705883,0.76862746}
+Kristian Mischke}
+{\color[rgb]{0.3529412,0.3529412,0.3529412}
+Junior Programmer}
+
+231 W. Timonium Rd,\ Timonium-Lutherville,\ MD 21093\ {\textbar} 443-875-3124
+{\textbar}\ \href{mailto:kristianmischke@gmail.com}{\textcolor[rgb]{0.019607844,0.3882353,0.75686276}{kristianmischke@gmail.com}}\ {\textbar}\ \href{http://kkcoder.net}{\textcolor[rgb]{0.019607844,0.3882353,0.75686276}{kkcoder.net}}
+
+Problem-solver and thinker with just over four years of experience in the industry. I enjoy\ video game development and am passionate about education and (computational) linguistics.
+\section{Experience}
+
+((( for exp in work_experience )))
+\subsection[(( exp.position ))\ \ (( exp.start_time )) {}-- (( exp.end_time ))]{(( exp.position ))\ \ (( exp.start_time )) {}--
+(( exp.end_time ))}
+\subsubsection{(( exp.company )), (( exp.place ))}
+\liststyleLFOii
+\begin{itemize}
+((( for resp in exp.responsibilities )))
+\item ree
+((( endfor )))
+\end{itemize}
+((( endfor )))
+
+\subsection[Data Science Research Intern\ \ March 2021 {}-- Present]{Data Science Research Intern\ \ March 2021 --
+Present}
+\subsubsection{RedShred LLC, Baltimore, MD}
+\liststyleLFOii
+\begin{itemize}
+\item Achieved .909 median f1-score with
+fine-tuned\ \textstyleHeadingivChar{BERT}\ and\ \textstyleHeadingivChar{RoBerta}\ transformer models on email title
+classification task, which outperformed the 0.78 of simpler ML models.
+\item Used\ \textstyleToolPrimaryChar{Label Studio}\ to quickly annotate documents for custom datasets involving CV
+document segmentation and text\ \textstyleHeadingivChar{NER extraction}.
+\end{itemize}
+\subsection[Junior Programmer\ \ Jan 2018\ {}-- Present]{Junior Programmer\ \ Jan 2018\ {}-- Present}
+\subsubsection{Mohawk Games LLC, Baltimore, MD}
+\liststyleLFOi
+\begin{itemize}
+\item Integrated\ \textstyleHeadingivChar{mod.io API\ }into Old World; added support for modding game assets with
+AssetBundles; and support for Translation mods.
+\item Developed a Text Manager class integrating Mohawk's localization system with hierarchical text generation\ (e.g.
+bullet and comma list building)
+\item Implemented\ the\ in-game\ {}``Event Browser'' tool\ in\ Old World\ that allows\ designers and writers\ to easily
+modify and create XML files for in-game events.
+\item Worked on making Old World\ ready for\ localization.
+\item Wrote a tool for Material Property Management. Allows for the tagging of Material files, and one-click updating of
+the out-of-sync properties of those objects.
+\item Wrote a\ \textstyleToolPrimaryChar{Unity}\ tool for Asset Management\ that allows developers to observe the
+dependency relations of\ Unity\ assets.
+\item Used\ \textstyleToolPrimaryChar{JIRA}\ task management and\ \textstyleToolPrimaryChar{Perforce}\ version control
+and merged changes in a large repo.
+\end{itemize}
+\subsection[Quality Assurance\ Tester\ \ Jun 2017 {}-- Jan 2018]{Quality Assurance\ Tester\ \ Jun 2017 -- Jan 2018}
+\liststyleLFOi
+\begin{itemize}
+\item Discovered and reported bugs to the developers\ \& repaired bugs in\ \textstyleToolPrimaryChar{Unity
+3D}\ and\ \textstyleToolPrimaryChar{C\#}\ within skill set.
+\end{itemize}
+\section{Education}
+\subsection[University of Maryland, Baltimore County (UMBC)\ \ Expected May 2021]{University of Maryland, Baltimore
+County (UMBC)\ \ Expected May 2021}
+Pursuing a\ B.S. in Computer Science\ with a focus in\ Game Development\ and a\ Minor in Applied Linguistics.
+
+\liststyleLFOi
+\begin{itemize}
+\item 3.936\ GPA\ \ \ \ Outstanding Senior in Computer Science
+\end{itemize}
+\section{Projects}
+\subsection[Lead Designer, Programmer\ \ Spring 2021]{Lead Designer, Programmer\ \ Spring 2021}
+\subsubsection[Recurring
+Moment]{\href{https://github.com/KristianMischke/RecurringMoment/releases}{\textstyleHyperlink{Recurring Moment}}}
+\liststyleLFOi
+\begin{itemize}
+\item Time-travel puzzle platformer video game. Game mechanics are inspired by the feature
+film\ \href{https://www.imdb.com/title/tt0390384/}{\textstyleHyperlink{Primer (2004)}}. Game developed
+in\ \textstyleToolPrimaryChar{Unity\ 3D}\ and\ \textstyleToolPrimaryChar{C\#}. Alpha demoed
+at\ \href{https://d.docs.live.net/bc6d1b9f08998267/Resume/'https:/umbc.voicethread.com/myvoice/thread/17391629/110295400/102619788}{\textstyleHyperlink{URCAD
+2021}}.
+\item Conceptualized, Pitched, and Prototyped original idea during the first 3 weeks of class.
+\item Acted as Lead Designer and interfaced with the Art \& Programming teams at weekly meetings.
+\item Implemented core mechanics and sparse data structures to store time-travel data.
+\end{itemize}
+\subsection[Programmer\ \ Spring 2021]{Programmer\ \ Spring 2021}
+\subsubsection[GroupFormer]{\href{https://groupformer.herokuapp.com/}{\textstyleHyperlink{GroupFormer}}}
+\liststyleLFOi
+\begin{itemize}
+\item Webapp\ for coordinating and forming people into groups. Developed for\ the CMSC 447 class.
+\item Developed front-end form for setting up the GroupFormer project
+using\ \textstyleToolPrimaryChar{Django},\ \textstyleToolPrimaryChar{HTML}, and\ \textstyleToolPrimaryChar{JQuery}.
+\item Collaborated with teammates to develop algorithm for scoring participant groupings.
+\item Integrated Django authentication to secure instructor's forms.
+\end{itemize}
+\subsection{Applying the Cascaded Finite State Grammar Induction}
+\subsection[Model to Trading Card Game Corpora\ \ Fall 2020]{Model to Trading Card Game Corpora\ \ Fall 2020}
+\subsubsection[CMSC\ 473 Intro to NLP Class @ UMBC]{CMSC\ 473 Intro to NLP Class @ UMBC}
+\liststyleLFOi
+\begin{itemize}
+\item Proposed the original idea
+for\ \href{http://www.kkcoder.net/media/documents/grammar_induction_tcg_cmsc_473_group_final_project.pdf}{\textstyleHyperlink{this
+final group project}}.
+\item Implemented--with a group of 3\ peers--a\ \textstyleHeadingivChar{Grammar Induction}\ algorithm
+in\ \textstyleToolPrimaryChar{Python}\ from an academic paper that uses a cascaded chunking algorithm
+with\ \textstyleHeadingivChar{HMMs}.
+\item We analyzed model performance using perplexity, and we applied it to Trading Card Games like\ \textit{Magic: the
+Gathering},\ \textit{Yu-Gi-Oh!}\ and others.
+\end{itemize}
+\subsection[Linux\ Chess\ Kernel Module\ \ Spring 2020]{Linux\ Chess\ Kernel Module\ \ Spring 2020}
+\subsubsection[CMSC 421 Operating Systems\ Class @ UMBC]{CMSC 421 Operating Systems\ Class @ UMBC}
+\liststyleLFOi
+\begin{itemize}
+\item Implemented the device module in the\ \textstyleToolPrimaryChar{C}\ programming language to store and manage chess
+game state across multiple file pointers; with the option to play against\ an AI opponent using\ the\ min-max with
+alpha-beta pruning\ algorithm.
+\item Only student out of the three sections of the course to complete all the extra credit and be eligible
+for\ the\ course-wide tournament.
+\end{itemize}
+\subsection[Other\ Note{}-Worthy\ Classes from UMBC]{Other\ Note-Worthy\ Classes from UMBC}
+\liststyleLFOi
+\begin{itemize}
+\item \textstyleHeadingiiiChar{Computer Graphics}\ (Spring
+2020)\ Implemented\ \textstyleHeadingivChar{ray-tracing}\textcolor[rgb]{0.76862746,0.34901962,0.06666667}{\ }algorithm\ in\ \textstyleToolPrimaryChar{C++}.
+Used shaders and GLEW and GLSL to push vertices to the render pipeline.\ We
+used\ \textstyleToolPrimaryChar{Git}\ version control to track progress.
+\item \textstyleHeadingiiiChar{Graphics for Games}\ (Fall 2020).\ Navigated\ the\ \textstyleToolPrimaryChar{Unreal
+Engine}\ \textstyleToolPrimaryChar{C++}\ source\ code. Projects focused on implementing graphics algorithms as
+Blueprints, Plugins, and Engine modifications.
+\end{itemize}
+\subsection[Schess: A Chess Battle{}-Royal Variant\ \ Aug 2020 {}-- Present]{Schess: A Chess Battle-Royal Variant\ \ Aug
+2020 -- Present}
+\subsubsection[schessgame.com]{\href{http://www.schessgame.com/}{\textstyleHyperlink{schessgame.com}}}
+\liststyleLFOi
+\begin{itemize}
+\item Acted as the Lead Programmer during a 48-hour game jam with three other friends.
+\item Responsible for game-logic, and networking code using Remote Procedure Calls (RPCs)
+with\ \textstyleHeadingivChar{Photon Unity Networking (PUN)}\ in the\ \textstyleToolPrimaryChar{Unity 3D}\ game engine.
+\end{itemize}
+\subsection[Drag{}'n{}'Drop Coding Website\ \ June 2017 {}-- May 2018]{Drag'n'Drop Coding Website\ \ June 2017 -- May
+2018}
+\liststyleLFOi
+\begin{itemize}
+\item Created website to showcase
+my\ \href{https://www.youtube.com/channel/UC44hbuzQZteAb82_8QzfBvw}{\textstyleHyperlink{educational programming
+videos}}
+\item Website had a\ \textstyleHeadingivChar{Django}\ backend API and a\ \textstyleHeadingivChar{React JS}\ front-end
+interface.
+\end{itemize}
+\section{Volunteer Work \& Clubs}
+\subsection[Keeping Blessing Hill Website\ \ 2018 {}-- 2019]{Keeping Blessing Hill Website\ \ 2018 -- 2019}
+\liststyleLFOi
+\begin{itemize}
+\item
+Created\ \href{http://www.keepingblessinghill.com/}{\textstyleHyperlink{keepingblessinghill.com}}\ using\ \textstyleHeadingivChar{Jekyll}\ \&
+GitHub pages for my grandmother's blog to promote her book.
+\end{itemize}
+\subsection[Programming HS Volunteer Tutor\ \ 2018 {}-- 2020 School Years]{Programming HS Volunteer Tutor\ \ 2018 --
+2020 School Years}
+\subsubsection{Crossroads Homeschool CO-OP}
+\liststyleLFOi
+\begin{itemize}
+\item Developed curriculum based off the book\ \textit{Learning Processing\ }by Daniel Shiffman.
+\item Lead class discussions with PowerPoints \& live coding and organized labs to enforce problem solving and debugging
+skills.
+\end{itemize}
+\subsection[Scratch Programming MS Volunteer Tutor\ \ 2016 {}-- 2020 School Years]{Scratch Programming MS Volunteer
+Tutor\ \ 2016 -- 2020 School Years}
+\subsubsection{Crossroads Homeschool CO-OP}
+\liststyleLFOi
+\begin{itemize}
+\item Taught 7 to 12 students about variables, program flow, and basic problem-solving using MIT's programming language
+called\ \textstyleHeadingivChar{Scratch}.
+\item Integrated my YouTube video tutorials for individualized instruction for the 2018-2020 School Years.
+\end{itemize}
+\subsection[Club Member \& Project Lead Programmer\ \ Fall 2018 {}-- Fall 2019]{Club Member \& Project Lead
+Programmer\ \ Fall 2018 -- Fall 2019}
+\subsubsection[UMBC Game Developers Club\ umbcgamedev.com]{UMBC Game Developers
+Club\ \href{https://umbcgamedev.com/}{\textstyleHyperlink{umbcgamedev.com}}}
+\liststyleLFOi
+\begin{itemize}
+\item Participated in club meetings, events, and game jams
+\item Acted as Lead Programmer for\ \textit{Role Playing Gamble}, one of the club 2018-2019 games.
+\item Managed tasks with a group of 2 other programmers throughout the duration of the project,
+using\ \textstyleToolPrimaryChar{Git}\ for versioning \& merging and\ \textstyleToolPrimaryChar{Unity
+3D}\ \&\ \textstyleToolPrimaryChar{C\#}\ technologies for development.
+\end{itemize}
+\end{document}

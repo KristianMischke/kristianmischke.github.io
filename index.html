@@ -36,7 +36,7 @@ home: "false"
             {% endif %}
             {{ item.video-demo }}
             {% for gallary_image in item.gallary %}
-            <img width="{% if gallary_image.custom-width %}{{ gallary_image.custom-width }}{% else %}100%{% endif %}"
+            <img width="{% if gallary_image.custom-width %}{{ gallary_image.custom_width }}{% else %}100%{% endif %}"
                  src="{{ gallary_image.path }}"/>
             {% endfor %}
             <div class="button-container">
