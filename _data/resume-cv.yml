@@ -94,7 +94,7 @@ projects:
   gallary:
     - path: "/media/images/project images/RecurringMoment_01.PNG"
   buttons:
-    - url: https://github.com/KristianMischke/RecurringMoment/releases
+    - url: https://kkcoder.itch.io/recurring-moment
       message: Download
   repository: https://github.com/KristianMischke/RecurringMoment
   project_description: "Time-travel puzzle platformer video game developed for the Spring 2021 CMSC 493 Game Capstone Class at UMBC. Game mechanics are inspired by the feature film <a href='https://www.imdb.com/title/tt0390384/'>Primer (2004)</a>. Game developed in <span class='tool-primary'>Unity 3D</span> and <span class='tool-primary'>C#</span>. Alpha demoed at <a href='https://umbc.voicethread.com/myvoice/thread/17391629/110295400/102619788'>URCAD 2021</a>"
