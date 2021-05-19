@@ -23,7 +23,7 @@ work_experience:
   end_time: Present
   responsibilities:
   - description: Achieved .909 median f1-score with fine-tuned <span class="tool-secondary">BERT</span> and <span class="tool-secondary">RoBerta</span> transformer models on email title classification task, which outperformed the 0.78 of simpler ML models.
-  - description: Used <span class="tool-primary">Label Studio</span> to quickly annotate documents for custom datasets involving CV document segmentation and text <span class="tool-secondary">NER extraction</span>.
+  - description: Used <span class="tool-primary">Label Studio</span> to annotate custom datasets involving CV document segmentation and <span class="tool-secondary">NER extraction</span>.
   #TODO: Experimented with SHAP...
   #TODO: R&D Reports
 
@@ -37,12 +37,12 @@ work_experience:
   end_time: Present
   responsibilities:
   #TODO: achieved/accomplished, not did
-  - description: Integrated <a href="https://mod.io/">mod.io API</a> into <a href="https://www.mohawkgames.com/oldworld/">Old World</a>; added support for modding game assets with AssetBundles; and support for Translation mods.
-  - description: Developed a Text Manager class integrating Mohawk’s localization system with hierarchical text generation (e.g. bullet and comma list construction)
+  - description: Integrated <a href="https://mod.io/">mod.io API</a> into <a href="https://www.mohawkgames.com/oldworld/">Old World</a>; added support for modding with AssetBundles and for Translation mods.
+  - description: Developed a Text Manager class integrating Mohawk’s localization system with hierarchical text generation
   - description: Implemented the in-game “Event Browser” tool in <a href="https://www.mohawkgames.com/oldworld/">Old World</a> that allows designers and writers to easily modify and create XML files for in-game events.
   - description: Worked on making <a href="https://www.mohawkgames.com/oldworld/">Old World</a> ready for localization.
   - description: Wrote a tool for Material Property Management. Allows for the tagging of Material files, and one-click updating of the out-of-sync properties of those objects.
-  - description: Wrote a <span class="tool-primary">Unity</span> tool for Asset Management that allows developers to observe the dependency relations of Unity assets.
+  - description: Wrote a <span class="tool-primary">Unity</span> tool that allows developers to observe the dependency relations of Unity assets.
   - description: Used <span class="tool-primary">JIRA</span> task management and <span class="tool-primary">Perforce</span> version control and merged changes in a large repo.
 
 - position: Quality Assurance Tester
@@ -101,6 +101,7 @@ projects:
   responsibilities:
   - description: Conceptualized, Pitched, and Prototyped original idea during the first 3 weeks of class.
   - description: Acted as Lead Designer and interfaced with the Art & Programming teams at weekly meetings.
+  - description: Project management with <span class='tool-secondary'>SCRUM</span> development sprints and burndown charts
   - description: Implemented core mechanics and sparse data structures to store time-travel data.
 
 - title: GroupFormer
@@ -121,6 +122,7 @@ projects:
   video_demo: <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6ikItt-gD0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   project_description: Web-app built for the Spring 2021 CMSC 447 Software Engineering class at UMBC. Enables users to easily set up forms for grouping people into different projects based on their interests and who they want to work with.
   responsibilities:
+  - description: <span class='tool-secondary'>AGILE</span> and <span class='tool-secondary'>GitFlow</span> frameworks for development sprints
   - description: Developed front-end form for setting up the GroupFormer project using <span class='tool-primary'>Django</span>, <span class='tool-primary'>HTML</span>, and <span class='tool-primary'>JQuery</span>.
   - description: Collaborated with teammates to develop algorithm for scoring participant groupings.
   - description: Integrated Django authentication to secure instructor's forms.
@@ -251,7 +253,7 @@ projects:
   start_time: Spring 2020
   end_time:
   responsibilities:
-  - description: Implemented the device module in the <span class="tool-primary">C</span> programming language to store and manage chess game state across multiple file pointers; with the option to play against an AI opponent using the min-max with alpha-beta pruning algorithm.
+  - description: Implemented a device module in <span class="tool-primary">C</span> to store and manage chess game states across multiple file pointers; with the option to play against an AI opponent using the min-max with alpha-beta pruning algorithm.
   - description: Only student out of the three sections of the course to complete all the extra credit and be eligible for the course-wide tournament.
   - description: <span class="tool-primary">Git</span> version control was required for this class to track incremental changes.
 
@@ -291,7 +293,7 @@ extra_curricular:
   end_time: 2020
   responsibilities:
   - description: Developed curriculum based off the book <a href="http://learningprocessing.com/">Learning Processing</a> by Daniel Shiffman.
-  - description: Lead class discussions with PowerPoints & live coding and organized labs to enforce problem solving and debugging skills.
+  - description: Lead discussions with PowerPoints, live coding, and labs to enforce problem solving and debugging skills.
 
 - position: Scratch Programming MS Tutor
   tags:
@@ -302,7 +304,7 @@ extra_curricular:
   start_time: 2016
   end_time: 2020
   responsibilities:
-  - description: Taught 7 to 12 students about variables, program flow, and basic problem-solving using MIT’s programming language called <a href="https://scratch.mit.edu/">Scratch</a>.
+  - description: Taught students about variables, program flow, and basic problem-solving using <a href="https://scratch.mit.edu/">Scratch</a> by MIT.
   - description: Integrated my <a href="https://www.youtube.com/channel/UC44hbuzQZteAb82_8QzfBvw">YouTube video tutorials</a> for individualized instruction for the 2018-2020 School Years.
 
 - position: Lego® Robotics MS Tutor
