@@ -25,7 +25,7 @@ home: "false"
                 {% endif %}
                 {{ item.title }}
             </h2>
-            <p>{{ item.project-description }}</p>
+            <p>{{ item.project_description }}</p>
             {% if item.responsibilities %}
             <h3>My Responsibilities:</h3>
             <ul>
@@ -34,9 +34,9 @@ home: "false"
                 {% endfor %}
             </ul>
             {% endif %}
-            {{ item.video-demo }}
+            {{ item.video_demo }}
             {% for gallary_image in item.gallary %}
-            <img width="{% if gallary_image.custom-width %}{{ gallary_image.custom_width }}{% else %}100%{% endif %}"
+            <img width="{% if gallary_image.custom_width %}{{ gallary_image.custom_width }}{% else %}100%{% endif %}"
                  src="{{ gallary_image.path }}"/>
             {% endfor %}
             <div class="button-container">
