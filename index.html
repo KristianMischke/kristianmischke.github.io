@@ -43,6 +43,9 @@ home: "false"
                 {% for button in item.buttons %}
                 <a class="projectButton" href="{{ button.url }}">{{ button.message }}</a>
                 {% endfor %}
+                {% if item.repository %}
+                <a class="projectButton" href="{{ item.repository }}">Source</a>
+                {% endif %}
             </div>
         </div>
         {% endif %}
