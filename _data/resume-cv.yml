@@ -91,8 +91,6 @@ projects:
   start_time: Spring 2021
   end_time:
   icon: "/media/images/project images/RecurringMoment_icon.png"
-  gallary:
-    - path: "/media/images/project images/RecurringMoment_01.PNG"
   buttons:
     - url: https://kkcoder.itch.io/recurring-moment
       message: Download
