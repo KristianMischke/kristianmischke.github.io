@@ -16,11 +16,16 @@
 \usepackage{titlesec}
 \hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, urlcolor=blue, pdftitle=, pdfauthor=Kristian Mischke, pdfsubject=, pdfkeywords=}
 % Text styles
-\newcommand\textstyleMainBlue[1]{\textcolor[rgb]{0.26666668,0.44705883,0.76862746}{#1}}
+\definecolor{toolPrimaryText}{rgb}{0.3294117647,0.51764705,0.392156862745}
+\definecolor{toolPrimaryBg}{rgb}{0.941176470,0.9843137254, 0.960784313725}
+\definecolor{linkColor}{rgb}{0.019607844,0.3882353,0.75686276}
+
+\newcommand\textstyleMainColor[1]{\textcolor{toolPrimaryText}{#1}}
 \newcommand\textstyleHeadingivChar[1]{\textit{\textcolor[rgb]{0.6784314,0.30980393,0.05882353}{#1}}}
-\newcommand\textstyleToolPrimaryChar[1]{\textcolor[rgb]{0.18039216,0.45490196,0.70980394}{#1}}
-\newcommand\textstyleHyperlink[1]{\textcolor[rgb]{0.019607844,0.3882353,0.75686276}{#1}}
+\newcommand\textstyleToolPrimaryChar[1]{\colorbox{toolPrimaryBg}{\textcolor{toolPrimaryText}{#1}}}
 \newcommand\textstyleHeadingiiiChar[1]{\textit{#1}}
+
+\newcommand\customLink[2]{\href{#1}{\textcolor{linkColor}{\underline{#2}}}}
 
 \titlespacing{\section}{0pt}{\parskip}{-\parskip}
 \titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
@@ -71,15 +76,18 @@
 \begin{document}
 \clearpage\clearpage\pagestyle{MP}
 
-{\noindent\huge\textstyleMainBlue{((profile.name))}}
+{\noindent\huge\textstyleMainColor{((profile.name))}}
 
 {\noindent\large\color[rgb]{0.3529412,0.3529412,0.3529412}((profile.title))}
 
-\noindent ((profile.address))\ {\textbar} ((profile.phone)){\textbar}\ \href{mailto:((profile.email))}{\textcolor[rgb]{0.019607844,0.3882353,0.75686276}{kristianmischke@gmail.com}}\ {\textbar}\ \href{http://kkcoder.net}{\textcolor[rgb]{0.019607844,0.3882353,0.75686276}{((profile.website))}}
+\noindent\begin{tabular}{@{}*{4}{>{\centering\arraybackslash}p{\dimexpr(\linewidth-3\tabcolsep-4\arrayrulewidth)/4\relax}@{\textbar}}}
+  \textbar\ \ \ \  (( profile.address )) & (( profile.phone )) & \customLink{mailto:(( profile.email ))}{(( profile.email ))} & \customLink{http://(( profile.website ))}{((profile.website))}
+\end{tabular}
 
-((profile.tagline))
+\vspace{3pt}
+(( profile.tagline ))
 
-\section{\textstyleMainBlue{Experience}}
+\section{\textstyleMainColor{Experience}}
 \hrule height 0.2pt
 \vspace{2pt}
 ((( for project in work_experience )))
@@ -88,7 +96,7 @@
 ((( endif )))
 ((( endfor )))
 
-\section{\textstyleMainBlue{Education}}
+\section{\textstyleMainColor{Education}}
 \hrule height 0.2pt
 \vspace{2pt}
 ((( for edu in education )))
@@ -103,14 +111,20 @@
 
 \subsection{Continued Learning}
 ((( for item in continued_learning )))
-((( if item.url )))
-\subsubsection{(( item.when ))\ -\ (( item.authority )):\ \href{(( item.url ))}{\textcolor[rgb]{0.019607844,0.3882353,0.75686276}{(( item.title | replace('&', '\\&') ))}}}
+\vspace{2pt}
+\subsubsection{
+  \parbox{0.5\textwidth}{\raggedright{((( if item.url )))
+\customLink{(( item.url ))}{(( item.authority )):\ (( item.title | replace('&', '\\&') ))}
 ((( else )))
-\subsubsection{(( item.when ))\ -\ (( item.authority )):\ (( item.title ))}
-((( endif )))
+(( item.authority )):\ (( item.title ))
+((( endif )))}}
+  \hfill\parbox{0.4\textwidth}{\raggedleft (( item.when ))}}
+\vspace{2pt}
 ((( endfor )))
 
-\section{\textstyleMainBlue{Projects}}
+\clearpage
+
+\section{\textstyleMainColor{Projects}}
 \hrule height 0.2pt
 \vspace{2pt}
 ((( for project in projects )))
@@ -119,7 +133,7 @@
 ((( endif )))
 ((( endfor )))
 
-\section{\textstyleMainBlue{Volunteer Work \& Clubs}}
+\section{\textstyleMainColor{Volunteer Work \& Clubs}}
 \hrule height 0.2pt
 \vspace{2pt}
 ((( for project in extra_curricular )))

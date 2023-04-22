@@ -3,15 +3,17 @@
 ((( elif project.position)))
 ((( set section = project.position )))
 ((( endif )))
-\subsection{\parbox{0.5\textwidth}{\raggedright (( section | replace('&', '\\&') | replace('©', '\\copyright') | replace('®', '\\textregistered') ))}\hfill\parbox{0.4\textwidth}{\raggedleft (( project.start_time ))--(( project.end_time ))}}
+\subsection{\parbox{0.5\textwidth}{\raggedright (( section | replace('&', '\\&') | replace('©', '\\copyright') | replace('®', '\\textregistered') ))}\hfill\parbox{0.4\textwidth}{\raggedleft (( project.start_time ))(((if project.end_time )))--(( project.end_time ))((( endif )))}}
 ((( if project.company )))
 \subsubsection{
     \parbox{0.5\textwidth}{\raggedright ((( if project.company_link )))
-\href{(( project.company_link ))}{\textcolor[rgb]{0.019607844,0.3882353,0.75686276}{(( project.company ))}}
+\customLink{(( project.company_link ))}{(( project.company ))}
 ((( else )))
 (( project.company ))
 ((( endif )))}
+    ((( if project.place )))
     \hfill\parbox{0.4\textwidth}{\raggedleft (( project.place ))}
+    ((( endif )))
 }
 ((( endif )))
 \liststyleLFOii
@@ -31,9 +33,9 @@ resp.description
 | replace('<span class="tool-primary">', '\\textstyleToolPrimaryChar{')
 | replace('<span class="tool-secondary">', '\\textstyleHeadingivChar{')
 | replace('</span>', '}')
-| replace('<link_start>', '\\href{')
-| replace('<link_text>', '}{\\textstyleHyperlink{')
-| replace('<end_link>', '}}')
+| replace('<link_start>', '\\customLink{')
+| replace('<link_text>', '}{')
+| replace('<end_link>', '}')
 | replace('<i>', '\\textit{')
 | replace('</i>', '}')
 ))
