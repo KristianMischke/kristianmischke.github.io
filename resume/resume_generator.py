@@ -3,15 +3,12 @@ import os
 import subprocess
 import yaml
 
-
-def main():
-    # get resume data
-    with open('../_data/resume-cv.yml', encoding='utf8') as file:
-        resume_data = yaml.load(file, Loader=yaml.FullLoader)
-
+def generate_resume(tag: str, data: dict):
     # get original templated latex file
     with open('./resume_template.tex') as f:
         template_doc = f.read()
+
+    template_doc = template_doc.replace('<<resume_flavor>>', tag)
 
     # run template and output progress to file
     output = Environment(
@@ -23,27 +20,41 @@ def main():
         comment_end_string='#))',
         trim_blocks=True,
         loader=FileSystemLoader("")
-    ).from_string(template_doc).render(resume_data)
-    with open('./resume_output.tex', 'w') as f:
+    ).from_string(template_doc).render(data)
+
+    filename_base = f'{tag}_output'
+    with open(f'./{filename_base}.tex', 'w') as f:
         f.write(output)
 
+
     # build pdf
-    cmd = ['pdflatex', '-interaction', 'nonstopmode', './resume_output.tex']
+    cmd = ['pdflatex', '-interaction', 'nonstopmode', f'./{filename_base}.tex']
     proc = subprocess.Popen(cmd)
     proc.communicate()
 
     retcode = proc.returncode
     if not retcode == 0:
-        os.unlink('resume_output.pdf')
+        os.unlink(f'{filename_base}.pdf')
         raise ValueError('Error {} executing command: {}'.format(retcode, ' '.join(cmd)))
-    os.unlink('resume_output.aux')
-    os.unlink('resume_output.log')
+    os.unlink(f'{filename_base}.aux')
+    os.unlink(f'{filename_base}.log')
 
-    # open to view file
-    result_pdf_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'resume_output.pdf')
-    print(result_pdf_path)
-    os.system(f'cmd /c {result_pdf_path}')
+    return os.path.join(os.path.dirname(os.path.abspath(__file__)), f'{filename_base}.pdf')
 
+
+def main():
+    # get resume data
+    with open('../_data/resume-cv.yml', encoding='utf8') as file:
+        resume_data = yaml.load(file, Loader=yaml.FullLoader)
+
+    resume_flavors = ['resume', 'resume_ml', 'resume_games']
+
+    for flavor in resume_flavors:
+        result_pdf_path = generate_resume(flavor, resume_data)
+        print(result_pdf_path)
+
+        # open to view file
+        os.system(f'cmd /c {result_pdf_path}')
 
 if __name__ == '__main__':
     main()

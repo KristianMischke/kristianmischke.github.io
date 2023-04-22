@@ -22,12 +22,16 @@ education:
 continued_learning:
   - tags:
       - resume
+      - resume_ml
+      - resume_games
       - cv
     when: 2022
     authority: Secure Code Warrior
     title: In-depth OWASP Top 10 Awareness
   - tags:
       - resume
+      - resume_ml
+      - resume_games
       - cv
     when: 2023
     authority: CD.Training
@@ -41,6 +45,8 @@ work_experience:
   - position: Associate Software Engineer
     tags:
       - resume
+      - resume_ml
+      - resume_games
       - cv
     company: Ronday Technologies LLC
     company_link: https://rondayapp.com/
@@ -59,6 +65,8 @@ work_experience:
   - position: Data Science Research Intern
     tags:
       - resume
+      - resume_ml
+      - resume_games
       - cv
     company: RedShred LLC
     company_link: https://www.redshred.com/
@@ -74,6 +82,8 @@ work_experience:
   - position: Junior Programmer
     tags:
       - resume
+      - resume_ml
+      - resume_games
       - cv
     company: Mohawk Games LLC
     company_link: https://www.mohawkgames.com
@@ -129,6 +139,8 @@ projects:
     priority: 100
     tags:
       - resume
+      - resume_ml
+      - resume_games
       - home
     company:
     position: Game Designer & Programmer
@@ -153,6 +165,8 @@ projects:
     priority: 99
     tags:
       - resume
+      - resume_ml
+      - resume_games
       - home
     buttons:
       - url: https://github.com/snowminc/Groupformer
@@ -175,6 +189,7 @@ projects:
   - title: Data with a K
     tags:
       - resume
+      - resume_ml
     company: Devs with a K LLC
     company_link: https://withak.app/
     position: Lead Programmer
@@ -188,6 +203,7 @@ projects:
     priority: 98
     tags:
       - resume
+      - resume_games
       - home
     company: schessgame.com
     company_link: http://www.schessgame.com
@@ -283,6 +299,7 @@ projects:
     priority: 60
     tags:
       - resume
+      - resume_ml
       - home
     company: CMSC 473 Intro to NLP Class @ UMBC
     position:
@@ -298,6 +315,8 @@ projects:
   - title: Linux Chess Kernel Modules
     tags:
       - resume
+      - resume_ml
+      - resume_games
     company: CMSC 421 Operating Systems class @ UMBC
     position:
     place:
@@ -311,6 +330,7 @@ projects:
   - title: Other Note-Worthy Classes from UMBC
     tags:
       - resume
+      - resume_games
     position:
     place:
     start_time: 2020
@@ -325,6 +345,8 @@ extra_curricular:
   - position: Volunteer Tutor
     tags:
       - resume
+      - resume_ml
+      - resume_games
       - home
     company: Crossroads Homeschool CO-OP
     place: Baltimore, MD
@@ -380,6 +402,7 @@ extra_curricular:
   - position: Member & Project Lead Programmer
     tags:
       - resume
+      - resume_games
     company: UMBC Game Developers Club
     company_link: https://umbcgamedev.com
     place:

@@ -91,7 +91,7 @@
 \hrule height 0.2pt
 \vspace{2pt}
 ((( for project in work_experience )))
-((( if 'resume' in project.tags )))
+((( if '<<resume_flavor>>' in project.tags )))
 ((( include "project.tex" )))
 ((( endif )))
 ((( endfor )))
@@ -111,6 +111,7 @@
 
 \subsection{Continued Learning}
 ((( for item in continued_learning )))
+((( if '<<resume_flavor>>' in item.tags )))
 \vspace{2pt}
 \subsubsection{
   \parbox{0.5\textwidth}{\raggedright{((( if item.url )))
@@ -120,6 +121,7 @@
 ((( endif )))}}
   \hfill\parbox{0.4\textwidth}{\raggedleft (( item.when ))}}
 \vspace{2pt}
+((( endif )))
 ((( endfor )))
 
 \clearpage
@@ -128,7 +130,7 @@
 \hrule height 0.2pt
 \vspace{2pt}
 ((( for project in projects )))
-((( if 'resume' in project.tags )))
+((( if '<<resume_flavor>>' in project.tags )))
 ((( include "project.tex" )))
 ((( endif )))
 ((( endfor )))
@@ -137,7 +139,7 @@
 \hrule height 0.2pt
 \vspace{2pt}
 ((( for project in extra_curricular )))
-((( if 'resume' in project.tags )))
+((( if '<<resume_flavor>>' in project.tags )))
 ((( include "project.tex" )))
 ((( endif )))
 ((( endfor )))
