@@ -1,8 +1,16 @@
 <div class="{{ type }}">
-    <div class="name-and-info"> 
+    <div class="name-and-info">
          {% if project.title %}
          <h4 class="title">{{ project.title }}</h4>
-         {% if project.company %}<h5 class="company"><i>{{ project.company }}</i></h5>{% endif %}
+         {% if project.company %}
+            <h5 class="company"><i>
+                {% if project.company_link %}
+                <a href="{{ project.company_link }}">{{ project.company }}</a>
+                {% else %}}
+                {{ project.company }}
+                {% endif %}
+            </i></h5>
+        {% endif %}
          {% elsif project.position %}
             <h4 class="position">{{ project.position }}</h4>
             {% if project.company %}<h5 class="company"><i>{{ project.company }}</i></h5>{% endif %}
@@ -11,7 +19,13 @@
          {% endif %}
         <ul class="responsibilities">
             {% for responsibility in project.responsibilities %}
-            <li class="responsibility">{{responsibility.description}}</li>
+            <li class="responsibility">
+                {{ responsibility.description
+                    | replace: '<link_start>', '<a href="'
+                    | replace: '<link_text>', '">'
+                    | replace: '<end_link>', '</a>'
+                }}
+            </li>
             {% endfor %}
         </ul>
     </div>

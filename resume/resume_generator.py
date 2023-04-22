@@ -1,4 +1,4 @@
-from jinja2 import Environment
+from jinja2 import Environment, FileSystemLoader
 import os
 import subprocess
 import yaml
@@ -21,7 +21,8 @@ def main():
         variable_end_string='))',
         comment_start_string='((#',
         comment_end_string='#))',
-        trim_blocks=True
+        trim_blocks=True,
+        loader=FileSystemLoader("")
     ).from_string(template_doc).render(resume_data)
     with open('./resume_output.tex', 'w') as f:
         f.write(output)

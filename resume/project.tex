@@ -1,0 +1,41 @@
+((( if project.title )))
+((( set section = project.title )))
+((( elif project.position)))
+((( set section = project.position )))
+((( endif )))
+\subsection{\parbox{0.5\textwidth}{\raggedright (( section | replace('&', '\\&') | replace('©', '\\copyright') | replace('®', '\\textregistered') ))}\hfill\parbox{0.4\textwidth}{\raggedleft (( project.start_time ))--(( project.end_time ))}}
+((( if project.company )))
+\subsubsection{
+    \parbox{0.5\textwidth}{\raggedright ((( if project.company_link )))
+\href{(( project.company_link ))}{\textcolor[rgb]{0.019607844,0.3882353,0.75686276}{(( project.company ))}}
+((( else )))
+(( project.company ))
+((( endif )))}
+    \hfill\parbox{0.4\textwidth}{\raggedleft (( project.place ))}
+}
+((( endif )))
+\liststyleLFOii
+\begin{itemize}[itemsep=0pt,partopsep=2pt, parsep=2pt]
+((( for resp in project.responsibilities )))
+\item ((
+resp.description
+| replace('\\', '\\textbackslash}')
+| replace('&', '\\&')
+| replace('%', '\\%')
+| replace('$', '\\$')
+| replace('#', '\\#')
+| replace('~', '\\textasciitilde')
+| replace('^', '\\textasciicircum')
+| replace('©', '\\copyright')
+| replace('®', '\\textregistered')
+| replace('<span class="tool-primary">', '\\textstyleToolPrimaryChar{')
+| replace('<span class="tool-secondary">', '\\textstyleHeadingivChar{')
+| replace('</span>', '}')
+| replace('<link_start>', '\\href{')
+| replace('<link_text>', '}{\\textstyleHyperlink{')
+| replace('<end_link>', '}}')
+| replace('<i>', '\\textit{')
+| replace('</i>', '}')
+))
+((( endfor )))
+\end{itemize}

@@ -15,23 +15,23 @@ home: "true"
         </ul>
     </section>-->
 
+   {% assign resume = site.data.resume-cv %}
+
    <section>
       <img class="profile-pic" src="media/images/profile_2.jpeg" />
-      <h1>Kristian Mischke</h1>
+      <h1>{{ resume.profile.name }}</h1>
       <a href="/media/documents/KristianMischkeResume2021.pdf">[PDF Resume]</a>
-      <p style="text-align: justify">Problem-solver and thinker with just over four years of experience in the industry. I enjoy
-         video game development, and am passionate about education and (computational) linguistics.
-      </p>
+      <p style="text-align: justify">{{resume.profile.tagline}}</p>
    </section>
 
    <section>
       <h3>Experience</h3>
       <ul class="job-list resume-list">
-         {% for project in site.data.resume-cv.work_experience %}
+         {% for project in resume.work_experience %}
             {% if project.tags contains 'resume' %}
             <li>
                {% assign type = "job" %}
-               {% include resume-project-template.html %}
+               {% include resume-project-template.html.liquid %}
             </li>
             {% endif %}
          {% endfor %}
@@ -41,7 +41,7 @@ home: "true"
    <section>
       <h3>Education</h3>
       <ul class="education-list resume-list">
-         {% for education in site.data.resume-cv.education %}
+         {% for education in resume.education %}
          <li class="education">
             <div>
                <h4>{{ education.school }}</h4>
@@ -62,11 +62,11 @@ home: "true"
    <section>
       <h3>Projects</h3>
       <ul class="project-list resume-list">
-         {% for project in site.data.resume-cv.projects %}
+         {% for project in resume.projects %}
             {% if project.tags contains 'resume' %}
             <li>
                {% assign type = "project" %}
-               {% include resume-project-template.html %}
+               {% include resume-project-template.html.liquid %}
             </li>
             {% endif %}
          {% endfor %}
@@ -76,11 +76,11 @@ home: "true"
    <section>
       <h3>Volunteer Work & Clubs</h3>
       <ul class="extra-activities-list resume-list">
-         {% for project in site.data.resume-cv.extra_curricular %}
+         {% for project in resume.extra_curricular %}
             {% if project.tags contains 'resume' %}
             <li>
                {% assign type = "activity" %}
-               {% include resume-project-template.html %}
+               {% include resume-project-template.html.liquid %}
             </li>
             {% endif %}
          {% endfor %}
