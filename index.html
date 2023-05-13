@@ -30,14 +30,18 @@ home: "false"
             <h3>My Responsibilities:</h3>
             <ul>
                 {% for r in item.responsibilities %}
-                <li>{{ r.description }}</li>
+                <li>{{ r.description
+                    | replace: '<link_start>', '<a href="'
+                    | replace: '<link_text>', '">'
+                    | replace: '<end_link>', '</a>'
+                }}</li>
                 {% endfor %}
             </ul>
             {% endif %}
             {{ item.video_demo }}
-            {% for gallary_image in item.gallary %}
-            <img width="{% if gallary_image.custom_width %}{{ gallary_image.custom_width }}{% else %}100%{% endif %}"
-                 src="{{ gallary_image.path }}"/>
+            {% for gallery_image in item.gallery %}
+            <img width="{% if gallery_image.custom_width %}{{ gallery_image.custom_width }}{% else %}100%{% endif %}"
+                 src="{{ gallery_image.path }}"/>
             {% endfor %}
             <div class="button-container">
                 {% for button in item.buttons %}

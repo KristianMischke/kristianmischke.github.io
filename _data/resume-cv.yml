@@ -154,7 +154,7 @@ projects:
         message: Final Presentation
     video_demo: <iframe src="https://drive.google.com/file/d/1jJEMk2jwx-krwd3eELs18M5V8DefqWzv/preview" width="640" height="480"></iframe>
     repository: https://github.com/KristianMischke/RecurringMoment
-    project_description: Time-travel puzzle platformer video game developed for the Spring 2021 CMSC 493 Game Capstone Class at UMBC. Game mechanics are inspired by the feature film <a href='https://www.imdb.com/title/tt0390384/'>Primer (2004)</a>. Game developed in <span class="tool-secondary">Unity 3D</span> and <span class="tool-secondary">C#</span>. Alpha demoed at <a href='https://umbc.voicethread.com/myvoice/thread/17391629/110295400/102619788'>URCAD 2021</a>
+    project_description: Time-travel puzzle platformer video game developed for the Spring 2021 CMSC 493 Game Capstone Class at UMBC. Game mechanics are inspired by the feature film <a href='https://www.imdb.com/title/tt0390384/'>Primer (2004)</a>. Game developed in <span class="tool-primary">Unity 3D</span> and <span class="tool-primary">C#</span>. Alpha demoed at <a href='https://umbc.voicethread.com/myvoice/thread/17391629/110295400/102619788'>URCAD 2021</a>
     responsibilities:
       - description: Conceptualized, Pitched, and Prototyped original idea during the first 3 weeks of class.
       - description: Acted as Lead Designer and interfaced with the Art & Programming teams at weekly meetings.
@@ -182,7 +182,7 @@ projects:
     project_description: Web-app built for the Spring 2021 CMSC 447 Software Engineering class at UMBC. Enables users to easily set up forms for grouping people into different projects based on their interests and who they want to work with.
     responsibilities:
       - description: <span class="tool-secondary">AGILE</span> and <span class="tool-secondary">GitFlow</span> frameworks for development sprints
-      - description: Developed front-end form for setting up the GroupFormer project using <span class="tool-secondary">Django</span>, <span class="tool-secondary">HTML</span>, and <span class="tool-secondary">JQuery</span>.
+      - description: Developed front-end form for setting up the GroupFormer project using <span class="tool-primary">Django</span>, <span class="tool-primary">HTML</span>, and <span class="tool-primary">JQuery</span>.
       - description: Collaborated with teammates to develop algorithm for scoring participant groupings.
       - description: Integrated Django authentication to secure instructor's forms.
 
@@ -190,14 +190,25 @@ projects:
     tags:
       - resume
       - resume_ml
+      - home
+    priority: 91
     company: Devs with a K LLC
     company_link: https://withak.app/
     position: Lead Programmer
     place:
     start_time: 2022
     end_time: Present
+    gallery:
+      - path: "/media/images/project images/dwak_receipt_merge.jpg"
+        custom_width: 20%
+      - path: "/media/images/project images/dwak_01.png"
+        custom_width: 75%
     responsibilities:
-      - description: TODO
+      - description: Ideated data abstraction layer to handle different kinds of data.
+      - description: Architectured data pipelining suite in <span class="tool-primary">Python</span> backed by <span class="tool-primary">Cassandra</span> and <span class="tool-primary">Redis</span>.
+      - description: Developed receipt processing API that stitches multiple receipt images together uses <span class="tool-secondary">OCR</span> to extract receipt items and costs.
+      - description: Accelerated knowledge of using <span class="tool-primary">Docker</span> with Nvidia GPUs and AMD RoCM APUs for <span class="tool-secondary">Machine Learning</span> applications.
+      - description: Implemented security standards with password rotation using <span class="tool-primary">Vault</span> and authentication with <span class="tool-primary">Auth0</span> JWTs
 
   - title: "Schess: A Chess Battle-Royal Variant"
     priority: 98
@@ -212,7 +223,7 @@ projects:
     start_time: Aug 2020
     end_time: Present
     project_description: Schess is a multiplayer battle-royal chess variant where players move their pieces simultaneously each turn and must fight using the modified rules to be the last player standing! The game is developed by a small team of 4 friends and is in prototype/alpha condition (feedback is much appreciated!)
-    gallary:
+    gallery:
       - path: "/media/images/project images/Schess_01.PNG"
     video_demo: <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6eihx6GiB_Q?start=413" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     buttons:
@@ -223,11 +234,11 @@ projects:
       - description: Responsible for game-logic, and networking code using <span class="tool-secondary">Remote Procedure Calls (RPCs)</span> with <link_start>https://www.photonengine.com/pun<link_text>Photon Unity Networking (PUN)<end_link> in the <span class="tool-primary">Unity 3D</span> game engine.
 
   - title: Luna (Discord Bot)
-    priority: 97
+    priority: 60
     tags:
       - home
     icon: "/media/images/project images/luna.png"
-    gallary:
+    gallery:
       - path: "/media/images/project images/luna_important.PNG"
       - path: "/media/images/project images/luna_funny.png"
         custom_width: 350px
@@ -247,7 +258,7 @@ projects:
     place:
     start_time: 2018
     end_time: 2019
-    gallary:
+    gallery:
       - path: "/media/images/project images/KeepingBlessingHill.PNG"
     responsibilities:
       - description: Created <link_start>http://www.keepingblessinghill.com<link_text>keepingblessinghill.com<end_link> using <link_start>https://jekyllrb.com<link_text>Jekyll<end_link> & GitHub pages for my grandmother's blog to promote her book.
@@ -296,7 +307,7 @@ projects:
 
   #---SCHOOL PROJECTS---
   - title: Applying the Cascaded Finite State Grammar Induction Model to Trading Card Game Corpora
-    priority: 60
+    priority: 90
     tags:
       - resume
       - resume_ml

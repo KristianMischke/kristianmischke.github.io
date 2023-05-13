@@ -16,11 +16,12 @@
 \usepackage{titlesec}
 \hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, urlcolor=blue, pdftitle=, pdfauthor=Kristian Mischke, pdfsubject=, pdfkeywords=}
 % Text styles
-\definecolor{toolPrimaryText}{rgb}{0.3294117647,0.51764705,0.392156862745}
+\definecolor{headerMainColor}{rgb}{0.3294117647,0.51764705,0.392156862745}
+\definecolor{toolPrimaryText}{rgb}{0.1794117647,0.36764705,0.242156862745}
 \definecolor{toolPrimaryBg}{rgb}{0.941176470,0.9843137254, 0.960784313725}
 \definecolor{linkColor}{rgb}{0.019607844,0.3882353,0.75686276}
 
-\newcommand\textstyleMainColor[1]{\textcolor{toolPrimaryText}{#1}}
+\newcommand\textstyleMainColor[1]{\textcolor{headerMainColor}{#1}}
 \newcommand\textstyleHeadingivChar[1]{\textit{\textcolor[rgb]{0.6784314,0.30980393,0.05882353}{#1}}}
 \newcommand\textstyleToolPrimaryChar[1]{\colorbox{toolPrimaryBg}{\textcolor{toolPrimaryText}{#1}}}
 \newcommand\textstyleHeadingiiiChar[1]{\textit{#1}}
@@ -88,7 +89,7 @@
 (( profile.tagline ))
 
 \section{\textstyleMainColor{Experience}}
-\hrule height 0.2pt
+{\color{headerMainColor}{\hrule height 0.2pt}}
 \vspace{2pt}
 ((( for project in work_experience )))
 ((( if '<<resume_flavor>>' in project.tags )))
@@ -97,7 +98,7 @@
 ((( endfor )))
 
 \section{\textstyleMainColor{Education}}
-\hrule height 0.2pt
+{\color{headerMainColor}{\hrule height 0.2pt}}
 \vspace{2pt}
 ((( for edu in education )))
 \subsection{\parbox{0.5\textwidth}{\raggedright (( edu.school ))}\hfill\parbox{0.4\textwidth}{\raggedleft (( edu.end_time ))}}
@@ -127,7 +128,7 @@
 \clearpage
 
 \section{\textstyleMainColor{Projects}}
-\hrule height 0.2pt
+{\color{headerMainColor}{\hrule height 0.2pt}}
 \vspace{2pt}
 ((( for project in projects )))
 ((( if '<<resume_flavor>>' in project.tags )))
@@ -136,7 +137,7 @@
 ((( endfor )))
 
 \section{\textstyleMainColor{Volunteer Work \& Clubs}}
-\hrule height 0.2pt
+{\color{headerMainColor}{\hrule height 0.2pt}}
 \vspace{2pt}
 ((( for project in extra_curricular )))
 ((( if '<<resume_flavor>>' in project.tags )))
