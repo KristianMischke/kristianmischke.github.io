@@ -54,13 +54,15 @@ work_experience:
     start_time: August 2021
     end_time: Present
     responsibilities:
-      - description: Adapted quickly to changing requirements and priorities, demonstrating flexibility and a growth mindset in a dynamic startup environment
-      - description: Conducted thorough code reviews and provided constructive feedback to peers, fostering a culture of collective learning and high-quality code standards
-      - description: Reduced time to add new backend object types from days to minutes by implementing a generic object data structure stored in <span class="tool-primary">Postgres</span> and validated by JSON schemas, streamlining the development process
-      - description: Integrated <span class="tool-primary">Mixpanel</span> analytics for data-driven decision-making, enabling the team to make informed decisions and improve overall application performance
-      - description: Successfully integrated <span class="tool-primary">Unity WebGL</span> building, automated asset exporting, and hosting addressable assets on AWS, improving time to enter platform providing the user with a seamless experience
-      - description: Managed Dev-Ops build pipeline with <span class="tool-primary">Concourse</span>, ensuring a unified build process for optimal simplicity and efficiency
-      - description: Demonstrated a deep understanding of end-to-end networking stacks, successfully migrated multiple network paradigms using shim techniques to a unified system powered by <span class="tool-primary">SignalR</span>, <span class="tool-primary">Redis</span>, and <span class="tool-primary">Postgres</span> on the backend, and <span class="tool-primary">React TS</span> and <span class="tool-primary">Unity</span> on the frontend
+      - description: Adapted quickly to changing requirements and priorities, demonstrating flexibility and a growth mindset in a dynamic startup environment.
+      - description: Conducted thorough code reviews and provided constructive feedback to peers, fostering a culture of collective learning and high-quality code standards.
+      - description: Pursued R&D in <span class="tool-secondary">Generative AI</span> and within a week, rapidly developed a <span class="tool-primary">GPT-4</span> prompt 3D sandbox world demo.
+      - description: Reduced time to add new backend object types from days to minutes by implementing a generic object data structure stored in <span class="tool-primary">Postgres</span> and validated by JSON schemas, streamlining the development process.
+      - description: Integrated <span class="tool-primary">Mixpanel</span> analytics for data-driven decision-making, enabling the team to make informed decisions and improve overall application performance.
+      - description: Successfully integrated <span class="tool-primary">Unity WebGL</span> building, automated asset exporting, and hosting addressable assets on AWS, improving time to enter platform providing the user with a seamless experience.
+      - description: Managed Dev-Ops build pipeline with <span class="tool-primary">Concourse</span>, ensuring a unified build process for optimal simplicity and efficiency.
+      - description: Demonstrated a deep understanding of end-to-end networking stacks, contributed to distrubted realtime backend architecture powered by <span class="tool-primary">SignalR</span>, <span class="tool-primary">Redis</span>, and <span class="tool-primary">Postgres</span>.
+      - description: Doubled the number of users capable of being in a space at a given time, by unifying the network paradigm.
 
   - position: Data Science Research Intern
     tags:
