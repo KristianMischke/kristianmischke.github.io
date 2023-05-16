@@ -164,7 +164,7 @@ projects:
       - description: Implemented core mechanics and sparse data structures to store time-travel data.
 
   - title: GroupFormer
-    priority: 99
+    priority: 80
     tags:
       - resume
       - resume_ml
@@ -193,7 +193,7 @@ projects:
       - resume
       - resume_ml
       - home
-    priority: 91
+    priority: 95
     company: Devs with a K LLC
     company_link: https://withak.app/
     position: Lead Programmer
@@ -208,9 +208,32 @@ projects:
     responsibilities:
       - description: Ideated data abstraction layer to handle different kinds of data.
       - description: Architectured data pipelining suite in <span class="tool-primary">Python</span> backed by <span class="tool-primary">Cassandra</span> and <span class="tool-primary">Redis</span>.
-      - description: Developed receipt processing API that stitches multiple receipt images together uses <span class="tool-secondary">OCR</span> to extract receipt items and costs.
+      - description: Developed receipt processing API that stitches multiple receipt images together using <span class="tool-secondary">OCR</span> to extract receipt items and costs.
       - description: Accelerated knowledge of using <span class="tool-primary">Docker</span> with Nvidia GPUs and AMD RoCM APUs for <span class="tool-secondary">Machine Learning</span> applications.
       - description: Implemented security standards with password rotation using <span class="tool-primary">Vault</span> and authentication with <span class="tool-primary">Auth0</span> JWTs
+
+  - title: '"Magic Random Gathering"'
+    tags:
+      - resume
+      - resume_ml
+      - resume_games
+      - home
+    priority: 85
+    place:
+    start_time: 2019
+    end_time: Present
+    gallery:
+      - path: "/media/images/project images/MRG_KrakenOfTheSeas.png"
+        custom_width: 40%
+      - path: "/media/images/project images/MRG_SandalphonHeraldOfTheHost.png"
+        custom_width: 40%
+    iframes:
+      - src: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fthegamehavenmd%2Fposts%2Fpfbid022bHVAdhk638A7maq9tQRJ6CtRonGMNC8SDZRRCuy4kGieg2dfpUhq2hNqPWCY1ozl&show_text=true&width=500"
+    responsibilities:
+      - description: Developed AI magic card generators combining text and image <span class="tool-secondary">Generative AI</span>.
+      - description: Created modified <span class="tool-secondary">BNF</span> grammar for card generation until switching to <span class="tool-primary">GPT-3</span> when it was released.
+      - description: Card art generation with <span class="tool-secondary">VQGAN+CLIP</span> and later <span class="tool-secondary">Stable Diffusion</span> and <span class="tool-secondary">Midjourney</span>
+      - description: Printed hundreds of cards & played dozens of games, including at a local game store!
 
   - title: "Schess: A Chess Battle-Royal Variant"
     priority: 98
@@ -232,13 +255,10 @@ projects:
       - url: http://www.schessgame.com/
         message: Website
     responsibilities:
-      - description: Acted as the Lead Programmer during a 48-hour game jam with three other friends.
+      - description: Acted as the Lead Programmer during and after a 48-hour game jam with three other friends.
       - description: Responsible for game-logic, and networking code using <span class="tool-secondary">Remote Procedure Calls (RPCs)</span> with <link_start>https://www.photonengine.com/pun<link_text>Photon Unity Networking (PUN)<end_link> in the <span class="tool-primary">Unity 3D</span> game engine.
 
   - title: Luna (Discord Bot)
-    priority: 60
-    tags:
-      - home
     icon: "/media/images/project images/luna.png"
     gallery:
       - path: "/media/images/project images/luna_important.PNG"
@@ -254,7 +274,6 @@ projects:
     responsibilities:
       - description:
 
-  #---PERSONAL PROJECTS---
   - title: Keeping Blessing Hill Website
     position:
     place:
@@ -266,7 +285,7 @@ projects:
       - description: Created <link_start>http://www.keepingblessinghill.com<link_text>keepingblessinghill.com<end_link> using <link_start>https://jekyllrb.com<link_text>Jekyll<end_link> & GitHub pages for my grandmother's blog to promote her book.
 
   - title: Drag'n'Drop Coding Tutorial Website
-    priority: 79
+    priority: 50
     tags:
       - home
     position:

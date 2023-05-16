@@ -62,7 +62,8 @@ home: "true"
    <section>
       <h3>Projects</h3>
       <ul class="project-list resume-list">
-         {% for project in resume.projects %}
+         {% assign sorted = resume.projects | sort: 'priority' | reverse %}
+         {% for project in sorted %}
             {% if project.tags contains 'resume' %}
             <li>
                {% assign type = "project" %}

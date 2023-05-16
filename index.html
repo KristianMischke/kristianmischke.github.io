@@ -43,6 +43,16 @@ home: "false"
             <img width="{% if gallery_image.custom_width %}{{ gallery_image.custom_width }}{% else %}100%{% endif %}"
                  src="{{ gallery_image.path }}"/>
             {% endfor %}
+            {% for iframe in item.iframes %}
+            <iframe
+                title=""
+                src="{{ iframe.src }}"
+                width="500" height="625"
+                style="border: none; overflow: hidden;"
+                scrolling="no" frameBorder="0"
+                allowFullScreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            {% endfor %}
             <div class="button-container">
                 {% for button in item.buttons %}
                 <a class="projectButton" href="{{ button.url }}">{{ button.message }}</a>
