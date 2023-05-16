@@ -338,6 +338,8 @@ projects:
     place:
     start_time: Fall 2020
     end_time:
+    iframes:
+      - src: "https://kkcoder.net/media/documents/grammar_induction_tcg_cmsc_473_group_final_project.pdf"
     responsibilities:
       - description: Proposed the original idea for <link_start>https://kkcoder.net/media/documents/grammar_induction_tcg_cmsc_473_group_final_project.pdf<link_text>this final group project<end_link>.
       - description: Implemented-with a group of 3 peers-a <span class="tool-secondary">Grammar Induction</span> algorithm in <span class="tool-primary">Python</span> from an academic paper that uses a cascaded chunking algorithm with <span class="tool-secondary">HMMs</span>.
