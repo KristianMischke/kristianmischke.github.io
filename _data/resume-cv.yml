@@ -94,6 +94,7 @@ work_experience:
     end_time: July 2021
     responsibilities:
       - description: Integrated <link_start>https://mod.io/<link_text>mod.io API<end_link> into <link_start>https://www.mohawkgames.com/oldworld<link_text>Old World<end_link>; added support for modding with AssetBundles and for Translation mods.
+      - description: Assessed capability of <span class="tool-secondary">GANs (Generative Adversarial Networks</span> through R&D for generating in-game character portraits.
       - description: Developed a Text Manager class integrating Mohawk's localization system with hierarchical text generation
       - description: Implemented the in-game "Event Browser" tool in <link_start>https://www.mohawkgames.com/oldworld<link_text>Old World<end_link> that allows designers and writers to easily modify and create XML files for in-game events.
   #    - description: Worked on making <link_start>https://www.mohawkgames.com/oldworld<link_text>Old World<end_link> ready for localization.
