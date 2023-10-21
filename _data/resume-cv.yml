@@ -3,7 +3,7 @@ profile:
   title: Software Engineer
   address: Randallstown, MD
   phone: 443-875-3124
-  email: kristianmischke@gmail.com
+  email: kristianmischke@proton.me
   website: kkcoder.net
   tagline: Problem-solver and thinker with over six years of experience in the industry. I enjoy video game development and am very passionate about utilizing AI and ML to help people with their data. I'm working towards a long-term goal of reforming education by bringing it up to speed with modern technology and learner-centric approaches.
 
@@ -61,7 +61,7 @@ work_experience:
       - description: Integrated <span class="tool-primary">Mixpanel</span> analytics for data-driven decision-making, enabling the team to make informed decisions and improve overall application performance.
       - description: Successfully integrated <span class="tool-primary">Unity WebGL</span> building, automated asset exporting, and hosting addressable assets on AWS, improving time to enter platform providing the user with a seamless experience.
       - description: Managed Dev-Ops build pipeline with <span class="tool-primary">Concourse</span>, ensuring a unified build process for optimal simplicity and efficiency.
-      - description: Demonstrated a deep understanding of end-to-end networking stacks, contributed to distrubted realtime backend architecture powered by <span class="tool-primary">SignalR</span>, <span class="tool-primary">Redis</span>, and <span class="tool-primary">Postgres</span>.
+      - description: Demonstrated a deep understanding of end-to-end networking stacks, contributed to distributed realtime backend architecture powered by <span class="tool-primary">SignalR</span>, <span class="tool-primary">Redis</span>, and <span class="tool-primary">Postgres</span>.
       - description: Doubled the number of users capable of being in a space at a given time, by unifying the network paradigm.
 
   - position: Data Science Research Intern
