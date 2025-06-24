@@ -1,11 +1,38 @@
 profile:
   name: Kristian Mischke
-  title: Software Engineer
+  title: Technical Wizard
   address: Randallstown, MD
   phone: 443-875-3124
   email: kristianmischke@proton.me
   website: kkcoder.net
-  tagline: Problem-solver and thinker with over six years of experience in the industry. I enjoy video game development and am very passionate about utilizing AI and ML to help people with their data. I'm working towards a long-term goal of reforming education by bringing it up to speed with modern technology and learner-centric approaches.
+  tagline: >
+    Polymath who enjoys grokking large and complex systems.
+    Over six years of professional experience in Software Engineering with an initial focus on Video Game development, followed by full-stack web app engineering, and now in building cloud solutions with Generative AI.
+    Always looking to surround myself with people I can learn from.
+    I have a passion for sustainability and building ethical systems that help humanity.
+  flavors:
+    resume:
+      title: Lead Software Engineer
+      tagline: >
+        Polymath who enjoys grokking large and complex systems.
+        Over six years of professional experience in Software Engineering with an initial focus on Video Game development, followed by full-stack web app engineering, and now in building cloud solutions with Generative AI.
+        Always looking to surround myself with people I can learn from.
+        I have a passion for sustainability and building ethical systems that help humanity.
+    resume_games:
+      title: Lead Game Developer
+      tagline: >
+        Polymath who enjoys grokking large and complex systems.
+        Over six years of professional experience in Software Engineering with an initial focus on Video Game development, followed by full-stack web app engineering, and now in building cloud solutions with Generative AI.
+        Always looking to surround myself with people I can learn from.
+        I have a passion for sustainability and building ethical systems that help humanity.
+    resume_ml:
+      title: Lead Data Scientist - Generative AI
+      tagline: >
+        Polymath who enjoys grokking large and complex systems.
+        Over six years of professional experience in Software Engineering with an initial focus on Video Game development, followed by full-stack web app engineering, and now in building cloud solutions with Generative AI.
+        Always looking to surround myself with people I can learn from.
+        I have a passion for sustainability and building ethical systems that help humanity.
+      
 
 #
 # EDUCATION
@@ -42,6 +69,37 @@ continued_learning:
 # WORK EXPERIENCE
 #
 work_experience:
+  - position: Lead Data Scientist - Generative AI
+    tags:
+      - resume
+      - resume_ml
+      - resume_games
+      - cv
+    company: Booz Allen Hamilton Inc.
+    company_link: https://boozallen.com/
+    place: Remote-Hybrid | MD | Washington, D.C.
+    start_time: October 2023
+    end_time: Present
+    responsibilities:
+        - description: Championed migration of <span class="tool-primary">Azure</span> data ingestion pipeline to <span class="tool-primary">AWS</span> including switching from <span class="tool-primary">Azure AI Video Indexer</span>, <span class="tool-primary">Document Intelligence</span>, and <span class="tool-primary">Azure AI Search</span> to <span class="tool-primary">Amazon Transcribe</span>, <span class="tool-primary">Amazon Textract</span>, and <span class="tool-primary">OpenSearch Serverless</span> respectively.
+        - description: One of the primary contributors to a multi-cloud (Azure & AWS), multi-language GenAI platform (<span class="tool-primary">Java Spring Boot</span> Web App & <span class="tool-primary">Python</span> data ingestion pipeline) serving 200+ active Alpha users while pursuing ATO (Authority To Operate) in production environment for thousands of users.
+        - description: Developed novel <span class="tool-secondary">RAG</span> approach for interleaving generated content with reliable citation blurbs using prompt-engineering and Levenshtein edit operations.
+        - description: Solutioned data processing approach for government RFP (Request for Proposal) documents using <span class="tool-primary">Azure Functions</span> and prompt-engineering OpenAI models with structured outputs to extract and classify sections of the document.
+        - description: Maintained company internal newsletter broadcast to hundreds of employees for latest GenAI advancements and research.
+
+  - position: Software Engineer Consultant
+    tags:
+      - resume
+      - cv
+    company: isiFederal LLC
+    company_link: https://www.isifederal.com
+    place: Part-time Remote
+    start_time: June 2023
+    end_time: October 2023
+    responsibilities:
+        - description: Integrated <span class="tool-primary">Grafana</span> and <span class="tool-primary">Prometheus</span> metrics dashboards and tracking into <span class="tool-primary">Proxmox</span> server, VMs, and <span class="tool-primary">Django</span> application.
+        - description: Developed database backup and restoration tool for partial and full restoration of on-prem database.
+
   - position: Associate Software Engineer
     tags:
       - resume
@@ -52,7 +110,7 @@ work_experience:
     company_link: https://rondayapp.com/
     place: Remote
     start_time: August 2021
-    end_time: Present
+    end_time: July 2023
     responsibilities:
       - description: Adapted quickly to changing requirements and priorities, demonstrating flexibility and a growth mindset in a dynamic startup environment.
       - description: Conducted thorough code reviews and provided constructive feedback to peers, fostering a culture of collective learning and high-quality code standards.

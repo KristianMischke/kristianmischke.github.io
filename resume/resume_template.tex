@@ -79,14 +79,14 @@
 
 {\noindent\huge\textstyleMainColor{((profile.name))}}
 
-{\noindent\large\color[rgb]{0.3529412,0.3529412,0.3529412}((profile.title))}
+{\noindent\large\color[rgb]{0.3529412,0.3529412,0.3529412}((profile.flavors.<<resume_flavor>>.title))}
 
 \noindent\begin{tabular}{@{}*{4}{>{\centering\arraybackslash}p{\dimexpr(\linewidth-3\tabcolsep-4\arrayrulewidth)/4\relax}@{\textbar}}}
   \textbar\ \ \ \  (( profile.address )) & (( profile.phone )) & \customLink{mailto:(( profile.email ))}{(( profile.email ))} & \customLink{http://(( profile.website ))}{((profile.website))}
 \end{tabular}
 
 \vspace{3pt}
-(( profile.tagline ))
+(( profile.flavors.<<resume_flavor>>.tagline ))
 
 \section{\textstyleMainColor{Experience}}
 {\color{headerMainColor}{\hrule height 0.2pt}}
